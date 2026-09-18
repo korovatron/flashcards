@@ -29,6 +29,15 @@ const SECTION_TITLES = {
   '4.12': '4.12 Fundamentals of functional programming',
 };
 
+// Persisted last-used selections, and the defaults used the first time
+// the app is opened (before anything has been saved).
+const LAST_UNIT_KEY = 'flashcards-last-unit';
+const LAST_SECTION_KEY = 'flashcards-last-section';
+const LAST_ORDER_KEY = 'flashcards-last-order';
+const DEFAULT_UNIT = 'unit2';
+const DEFAULT_SECTION = '4.5';
+const DEFAULT_ORDER = 'order';
+
 const screens = {
   loading: document.getElementById('screen-loading'),
   error: document.getElementById('screen-error'),
@@ -92,12 +101,13 @@ function refreshDropdownLabels() {
   });
 }
 
-function populateSectionOptions(unitKey) {
+function populateSectionOptions(unitKey, preferredSection = 'all') {
   const sections = UNIT_SECTIONS[unitKey];
   const values = ['all', ...sections];
   selectSectionEl.innerHTML = values.map((v) => `<option value="${v}"></option>`).join('');
-  selectSectionEl.value = 'all';
-  state.sectionKey = 'all';
+  const sectionToUse = values.includes(preferredSection) ? preferredSection : 'all';
+  selectSectionEl.value = sectionToUse;
+  state.sectionKey = sectionToUse;
   refreshDropdownLabels();
 }
 
@@ -202,16 +212,20 @@ function rotateCardColour(direction) {
 selectUnitEl.addEventListener('change', () => {
   populateSectionOptions(selectUnitEl.value);
   loadUnit(selectUnitEl.value);
+  localStorage.setItem(LAST_UNIT_KEY, selectUnitEl.value);
+  localStorage.setItem(LAST_SECTION_KEY, selectSectionEl.value);
 });
 
 selectSectionEl.addEventListener('change', () => {
   state.sectionKey = selectSectionEl.value;
   rebuildDeck();
+  localStorage.setItem(LAST_SECTION_KEY, selectSectionEl.value);
 });
 
 selectOrderEl.addEventListener('change', () => {
   state.orderMode = selectOrderEl.value;
   rebuildDeck();
+  localStorage.setItem(LAST_ORDER_KEY, selectOrderEl.value);
 });
 
 document.getElementById('btn-restart').addEventListener('click', rebuildDeck);
@@ -289,6 +303,13 @@ document.getElementById('btn-about-close').addEventListener('click', closeAboutM
 aboutModalOverlay.addEventListener('click', (e) => {
   if (e.target === aboutModalOverlay) closeAboutModal();
 });
+document.addEventListener('keydown', (e) => {
+  if (!aboutModalOverlay.classList.contains('active')) return;
+  if (e.key === 'Escape' || e.key === ' ' || e.key === 'Enter') {
+    e.preventDefault();
+    closeAboutModal();
+  }
+});
 chkShowAboutStartup.addEventListener('change', () => {
   localStorage.setItem(SHOW_ABOUT_STARTUP_KEY, chkShowAboutStartup.checked ? 'true' : 'false');
 });
@@ -307,5 +328,20 @@ if ('serviceWorker' in navigator) {
 }
 
 applyCardColour();
-populateSectionOptions(selectUnitEl.value);
-loadUnit(selectUnitEl.value);
+
+// Restore the unit/section/order last used; on first ever visit, default
+// to Unit 2 section 4.5 in sequential order.
+const savedUnit = localStorage.getItem(LAST_UNIT_KEY);
+const savedSection = localStorage.getItem(LAST_SECTION_KEY);
+const savedOrder = localStorage.getItem(LAST_ORDER_KEY);
+
+const initialUnit = savedUnit && UNIT_FILES[savedUnit] ? savedUnit : DEFAULT_UNIT;
+const initialSection = savedSection || DEFAULT_SECTION;
+const initialOrder = savedOrder === 'order' || savedOrder === 'random' ? savedOrder : DEFAULT_ORDER;
+
+selectUnitEl.value = initialUnit;
+selectOrderEl.value = initialOrder;
+state.orderMode = initialOrder;
+
+populateSectionOptions(initialUnit, initialSection);
+loadUnit(initialUnit);
