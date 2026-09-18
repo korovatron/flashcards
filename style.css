@@ -398,6 +398,15 @@ main#app {
   line-height: 1.5;
 }
 
+.modal-box p a {
+  color: var(--colour-primary);
+}
+
+.modal-box p a:hover,
+.modal-box p a:focus-visible {
+  color: var(--colour-accent);
+}
+
 .modal-checkbox-row {
   display: flex;
   align-items: center;
