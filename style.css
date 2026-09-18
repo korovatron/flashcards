@@ -173,6 +173,7 @@ main#app {
 }
 
 .card-scene {
+  position: relative;
   width: 100%;
   max-width: 900px;
   min-height: 200px;
@@ -185,8 +186,11 @@ main#app {
   position: relative;
   width: 100%;
   height: 100%;
+  border-radius: var(--radius);
+  border: 1px solid var(--ring-colour, transparent);
+  box-shadow: 0 0 10px var(--ring-colour, transparent);
   transform-style: preserve-3d;
-  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, border-color 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   touch-action: manipulation;
 }

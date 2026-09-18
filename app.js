@@ -170,6 +170,20 @@ function goToOffset(offset) {
   state.position = (state.position + offset + length) % length;
   state.revealed = false;
   renderCard();
+  rotateCardColour(offset > 0 ? 1 : -1);
+}
+
+// Neon border colours the card cycles through as you navigate next/previous.
+const CARD_COLOURS = ['#39ff14', '#b026ff', '#ffe600'];
+let cardColourIndex = 0;
+
+function applyCardColour() {
+  document.getElementById('card').style.setProperty('--ring-colour', CARD_COLOURS[cardColourIndex]);
+}
+
+function rotateCardColour(direction) {
+  cardColourIndex = (cardColourIndex + direction + CARD_COLOURS.length) % CARD_COLOURS.length;
+  applyCardColour();
 }
 
 // Wire up events
@@ -240,5 +254,6 @@ document.getElementById('btn-prev').addEventListener('click', () => goToOffset(-
 
 narrowQuery.addEventListener('change', refreshDropdownLabels);
 
+applyCardColour();
 populateSectionOptions(selectUnitEl.value);
 loadUnit(selectUnitEl.value);
