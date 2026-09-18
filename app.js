@@ -171,6 +171,17 @@ function goToOffset(offset) {
   state.revealed = false;
   renderCard();
   rotateCardColour(offset > 0 ? 1 : -1);
+  if (offset > 0) {
+    trackNextNavigation();
+  }
+}
+
+// Sends a GoatCounter custom event for "next card" navigation (button,
+// tap, or swipe). Guarded since count.js loads asynchronously.
+function trackNextNavigation() {
+  if (window.goatcounter && typeof window.goatcounter.count === 'function') {
+    window.goatcounter.count({ path: "Diya's Flashcard Navigation", event: true });
+  }
 }
 
 // Neon border colours the card cycles through as you navigate next/previous.
