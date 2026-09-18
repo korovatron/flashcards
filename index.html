@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AQA A Level Computer Science Flashcards</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>AQA A Level Computer Science Flashcards</h1>
+</header>
+
+<main id="app">
+
+  <section id="screen-select" class="screen">
+    <h2>Choose a unit</h2>
+    <div class="button-stack">
+      <button class="big-btn" data-unit="unit1">Unit 1</button>
+      <button class="big-btn" data-unit="unit2">Unit 2</button>
+    </div>
+  </section>
+
+  <section id="screen-loading" class="screen">
+    <p>Loading flashcards&hellip;</p>
+  </section>
+
+  <section id="screen-error" class="screen">
+    <p id="error-message" class="error-text"></p>
+    <button id="btn-error-back" class="link-btn">&larr; Choose a different unit</button>
+  </section>
+
+  <section id="screen-mode" class="screen">
+    <h2 id="mode-title"></h2>
+    <p class="card-count" id="mode-card-count"></p>
+    <div class="button-stack">
+      <button class="big-btn" id="btn-order">View in order</button>
+      <button class="big-btn" id="btn-random">Random order</button>
+    </div>
+    <button id="btn-back-to-units" class="link-btn">&larr; Choose a different unit</button>
+  </section>
+
+  <section id="screen-card" class="screen">
+    <div class="progress" id="progress"></div>
+
+    <div class="card-scene">
+      <div class="card" id="card">
+        <div class="card-face card-front">
+          <div class="card-label">Question</div>
+          <div class="card-text" id="card-front-text"></div>
+        </div>
+        <div class="card-face card-back">
+          <div class="card-label">Answer</div>
+          <div class="card-text" id="card-back-text"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button id="btn-prev">&#9664; Previous</button>
+      <button id="btn-reveal">Show answer</button>
+      <button id="btn-next">Next &#9654;</button>
+    </div>
+
+    <div class="secondary-controls">
+      <button id="btn-restart" class="link-btn">Restart deck</button>
+      <button id="btn-change-mode" class="link-btn">Change mode</button>
+      <button id="btn-change-unit" class="link-btn">Choose a different unit</button>
+    </div>
+  </section>
+
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>

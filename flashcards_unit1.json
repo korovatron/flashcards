@@ -1,0 +1,1312 @@
+[
+  {
+    "front": "What is a data type?",
+    "back": "- each variable has a data type\n-data type determines what type of value the variable will hold & set of operations allowed",
+    "section": "4.1"
+  },
+  {
+    "front": "What is an integer (data type)?",
+    "back": "- a whole number",
+    "section": "4.1"
+  },
+  {
+    "front": "What is a real/float (data type)?",
+    "back": "- numbers that include fractions/values after decimal point",
+    "section": "4.1"
+  },
+  {
+    "front": "What is boolean (data type)?",
+    "back": "- data type that represents 2 values: true & false",
+    "section": "4.1"
+  },
+  {
+    "front": "What is a character (data type)?",
+    "back": "- stores single character in a fixed-length format related to a specific character set (e.g. ASCII)",
+    "section": "4.1"
+  },
+  {
+    "front": "What is a string (data type)?",
+    "back": "- sequence of characters",
+    "section": "4.1"
+  },
+  {
+    "front": "What is Date/Time (data type)?",
+    "back": "- stores values like calendar date & time of day\n- typically available in databases",
+    "section": "4.1"
+  },
+  {
+    "front": "What is a pointer/reference?",
+    "back": "- pointer: object (variable) that stores a memory address\n- following a pointer → can access value stores at that location",
+    "section": "4.1"
+  },
+  {
+    "front": "What is dereferencing?",
+    "back": "- following a pointer → access value stored at the location",
+    "section": "4.1"
+  },
+  {
+    "front": "What is a record?",
+    "back": "- composite data structure\n- allows for collection of fields other than be grouped together",
+    "section": "4.1"
+  },
+  {
+    "front": "What is an array?",
+    "back": "- collection of elements accessed using an index (all elements must be same data type → except in Python)",
+    "section": "4.1"
+  },
+  {
+    "front": "What is a list?",
+    "back": "- dynamic collection of elements accessed using an index → can change size during runtime",
+    "section": "4.1"
+  },
+  {
+    "front": "What is a user-defined data type?",
+    "back": "- custom data type created by the user → combining existing data types\n- e.g. enumeration",
+    "section": "4.1"
+  },
+  {
+    "front": "What is a variable (Dim)?",
+    "back": "- an identifier that represents a memory location that can store a value\n→ value can change during execution",
+    "section": "4.1"
+  },
+  {
+    "front": "What is a constant (Const)?",
+    "back": "- identifier that represents a memory location that can store a value\n→ value cannot change during execution",
+    "section": "4.1"
+  },
+  {
+    "front": "What is an assignment statement?",
+    "back": "- sets values of a variable/constant",
+    "section": "4.1"
+  },
+  {
+    "front": "What is iteration?",
+    "back": "- repetition of a block of code",
+    "section": "4.1"
+  },
+  {
+    "front": "What is definite iteration & example?",
+    "back": "- repetition of a block of code for a set number of times \n→ e.g. FOR loop",
+    "section": "4.1"
+  },
+  {
+    "front": "What is indefinite iteration & examples?",
+    "back": "- repetition of a block of code being controlled by a condition \n→ unknown number of iterations to be performed \n→ e.g. WHILE & DO LOOP UNTIL",
+    "section": "4.1"
+  },
+  {
+    "front": "What is a selection statement & example?",
+    "back": "- allows blocks of code to be executed only when a certain condition is satisfied\n- e.g. IF THEN ELSE / SWITCH / CASE / MATCH",
+    "section": "4.1"
+  },
+  {
+    "front": "What is nested selection / iteration?",
+    "back": "- when an selected/iteration statement appears inside another selected/iteration statement",
+    "section": "4.1"
+  },
+  {
+    "front": "Why are meaningful identifier names useful?",
+    "back": "- name describes the purpose of variable or subroutine → make code easier to understand & maintain",
+    "section": "4.1"
+  },
+  {
+    "front": "What is real/float division?",
+    "back": "- when division between two values results in a quotient",
+    "section": "4.1"
+  },
+  {
+    "front": "What is integer division (DIV or \\)?",
+    "back": "- whole number part of division is returned",
+    "section": "4.1"
+  },
+  {
+    "front": "What is modulo (MOD)?",
+    "back": "- returns remainder of a division",
+    "section": "4.1"
+  },
+  {
+    "front": "What is exponentiation?",
+    "back": "- number to power of another\n- math.pow(b,n)",
+    "section": "4.1"
+  },
+  {
+    "front": "What is truncation?",
+    "back": "- removes decimals & returns whole number part of a value\n-math.trunc(n)",
+    "section": "4.1"
+  },
+  {
+    "front": "What is the difference between variables & constants?",
+    "back": "- variables can change value during execution of a program, constant’s value cannot change once assigned",
+    "section": "4.1"
+  },
+  {
+    "front": "What is the advantage of using named constants over variables?",
+    "back": "- if constant value is used multiple times throughout program & has to be changed, it can be done in one place → easier\n- can be given an identifier name → code is easier for humans to understand",
+    "section": "4.1"
+  },
+  {
+    "front": "Syntax to find length of string",
+    "back": "- String.Length",
+    "section": "4.1"
+  },
+  {
+    "front": "Syntax to find position of character in string",
+    "back": "- String.IndexOf(“(letter)”)\n- starts at 0",
+    "section": "4.1"
+  },
+  {
+    "front": "Syntax to extract substring of string",
+    "back": "- String.Substring(a,b)\n- a = start index (starting at 0)\n- b = length of substring",
+    "section": "4.1"
+  },
+  {
+    "front": "Syntax for concatenation (joining together) two strings",
+    "back": "- String1 & “ “ & String2",
+    "section": "4.1"
+  },
+  {
+    "front": "Syntax to convert character into character code (ASCII/Unicode)",
+    "back": "- Asc(String)",
+    "section": "4.1"
+  },
+  {
+    "front": "Syntax to convert character code (ASCII/Unicode) into character",
+    "back": "- Chr(String)",
+    "section": "4.1"
+  },
+  {
+    "front": "Syntax to convert from string to integer",
+    "back": "- CInt(String)\n- or Integer.Parse(String)",
+    "section": "4.1"
+  },
+  {
+    "front": "Syntax to convert string to float",
+    "back": "- CDbl(string)\n- or Double.Parse(String)",
+    "section": "4.1"
+  },
+  {
+    "front": "Syntax to convert integer to string",
+    "back": "- Integer.ToString()\n- CStr(Integer)",
+    "section": "4.1"
+  },
+  {
+    "front": "Syntax to convert float to string",
+    "back": "- Double.ToString()\n- CStr(Integer)",
+    "section": "4.1"
+  },
+  {
+    "front": "Syntax to convert Date/Time to string",
+    "back": "Dim dt As DateTime = DateTime.Now\n- dt.ToString()\n- dt.ToString(“dd/mm/yyyy”)",
+    "section": "4.1"
+  },
+  {
+    "front": "Syntax to convert string to Date/Time",
+    "back": "- DateTime.Parse(String)",
+    "section": "4.1"
+  },
+  {
+    "front": "What is random number generation?",
+    "back": "- use of algorithms to produce sequences of numbers that appear unpredictable",
+    "section": "4.1"
+  },
+  {
+    "front": "How does a computer randomly generate a number?",
+    "back": "- a built-in function takes a seed value \n- then uses a series of mathematical operations to arrive at a number",
+    "section": "4.1"
+  },
+  {
+    "front": "What are numbers randomly generated by computers called & what is the problem with them?",
+    "back": "- pseudorandom \n- computers can never generate a truly random number",
+    "section": "4.1"
+  },
+  {
+    "front": "Syntax for random integer & floating point number generation?",
+    "back": "Dim RGen As New Random()\n- non-negative integer: RGen.Next()\n- integer from 1 to 9: RGen.Next(1,10)\n- decimal from 0 to 1: RGen.NextDouble()\n- decimal from 0 to 10: RGen.NextDouble() * 10",
+    "section": "4.1"
+  },
+  {
+    "front": "What is exception handling?",
+    "back": "- a programming mechanism  that allows a response to errors or events that would have caused to program to crash\n- e.g. program could gracefully stop or ask user to enter again",
+    "section": "4.1"
+  },
+  {
+    "front": "Syntax for error handling",
+    "back": "Try → Code that may cause an error\nCatch ex As Exception → Code to handle the error\nFinally →  Optional: runs whether error occurs or not\nEnd Try",
+    "section": "4.1"
+  },
+  {
+    "front": "What is a subroutine (procedure/function)?",
+    "back": "- a named ‘out of line’ block of code that may be executed (called) by simply writing its name in a program statement",
+    "section": "4.1"
+  },
+  {
+    "front": "Advantages of using a subroutine (procedure/function)?",
+    "back": "- it can be reused multiple times within a program → makes code compact & easy to read",
+    "section": "4.1"
+  },
+  {
+    "front": "Difference between function & procedure?",
+    "back": "- both can return a value \n- function must return a value but procedures may not",
+    "section": "4.1"
+  },
+  {
+    "front": "What is a parameter (of a subroutine)?",
+    "back": "- define the data to be passed to a subroutine",
+    "section": "4.1"
+  },
+  {
+    "front": "What is the actual value passed by a parameter called?",
+    "back": "- argument",
+    "section": "4.1"
+  },
+  {
+    "front": "What is a subroutine interface?",
+    "back": "- method of passing data in & out of a subroutine",
+    "section": "4.1"
+  },
+  {
+    "front": "Characteristics of local variables in subroutines?",
+    "back": "- are declared within a subroutine \n- exist only while a subroutine is executing \n- are accessible only from within the subroutine",
+    "section": "4.1"
+  },
+  {
+    "front": "Why is it good practice to use local variables?",
+    "back": "- they only exist in the computer’s memory when their parent subroutine is executing → local variables a more memory efficient way of storing data than\nusing global variable",
+    "section": "4.1"
+  },
+  {
+    "front": "What is a global variable?",
+    "back": "- a variable with global scope → can be accessed anywhere within the program",
+    "section": "4.1"
+  },
+  {
+    "front": "Difference between local & global variables",
+    "back": "- local: only be accessed by subroutine which it was declared in\n- global: accessed from any part of program\n\n- local: only exist in memory when parent subroutine is executing \n- global: exist in memory for entire duration of program’s execution",
+    "section": "4.1"
+  },
+  {
+    "front": "What is a stack frame?",
+    "back": "- portion of stack memory used with subroutine calls to store:\n→return address \n→parameters\n→local variables",
+    "section": "4.1"
+  },
+  {
+    "front": "What does a stack frame allow you to do?",
+    "back": "- move to a subroutine call & then return to where we were called from & carry on",
+    "section": "4.1"
+  },
+  {
+    "front": "How is a stack frame used while executing nested subroutines?",
+    "back": "1) Each subroutine call pushed onto the computer’s call stack in form of a stack frame before subroutine’s code begins to execute \n\n2) Nested subroutine finishes executing → stack frame is popped from the call stack & computer uses the information to return to execution of the previous subroutine",
+    "section": "4.1"
+  },
+  {
+    "front": "What is a recursive subroutine?",
+    "back": "- one that has a call to itself as part of its execution",
+    "section": "4.1"
+  },
+  {
+    "front": "What is a base case in recursion?",
+    "back": "- value that will not cause a recursive call → allow the recursion to complete (& backtrack)",
+    "section": "4.1"
+  },
+  {
+    "front": "What is a programming paradigm?",
+    "back": "- particular approach to writing programs",
+    "section": "4.1"
+  },
+  {
+    "front": "What is procedural-oriented programming paradigm?",
+    "back": "- programming approach that is based on the use of procedures & functions",
+    "section": "4.1"
+  },
+  {
+    "front": "What does a structured approach to program design involve?",
+    "back": "- breaking down problems into sub-problems \n- code then organised into subroutines",
+    "section": "4.1"
+  },
+  {
+    "front": "What is a hierarchy chart?",
+    "back": "- diagram that represents the structure of a program\n- each subroutine is shown as a rectangle \n- hierarchy shows how subroutines are called from others",
+    "section": "4.1"
+  },
+  {
+    "front": "What does a object-oriented paradigm use?",
+    "back": "- objects as containers of both properties (data) & methods",
+    "section": "4.1"
+  },
+  {
+    "front": "What is a class?",
+    "back": "- defines methods & properties/attribute fields that capture the common behaviours & characteristics of objects",
+    "section": "4.1"
+  },
+  {
+    "front": "Advantages of using a structured approach to program design",
+    "back": "- navigation of different elements of the solution is improved → easier to maintain program\n- break down of program into subroutines → easier to find & fix bugs\n- testing carried out on individual modules \n- development can be split over team of developers → each assigned different module to work on",
+    "section": "4.1"
+  },
+  {
+    "front": "What are objects (in object-oriented programming)?",
+    "back": "- based on a class \n- created using a constructor → implicit (automatically provided) or explicit (Sub New()) \n- reference to the object assigned to a reference variable of the class type",
+    "section": "4.1"
+  },
+  {
+    "front": "What is instantiation?",
+    "back": "- creating an instance of a class (creating an object from a class)",
+    "section": "4.1"
+  },
+  {
+    "front": "What is encapsulation?",
+    "back": "- combining of properties (data) & methods (procedures/functions) together into a class \n\n→ way in which data is stored & methods are carried out is hidden from other classes \n\n→ e.g. Public Sub GetValue()",
+    "section": "4.1"
+  },
+  {
+    "front": "Why is encapsulation used?",
+    "back": "- protects data from being changed incorrectly\n- controls how data is accessed \n- makes programs more secure & easier to manage",
+    "section": "4.1"
+  },
+  {
+    "front": "What is inheritance?",
+    "back": "- relationship between 2 object types in which one is a kind of the other & shares some of its properties or behaviours",
+    "section": "4.1"
+  },
+  {
+    "front": "Advantages of using inheritance?",
+    "back": "- code reusability → saves time\n- easier maintenance → fix a bug once → fixed everywhere\n- supports polymorphism → different classes treated through common base class → more flexible & dynamic code",
+    "section": "4.1"
+  },
+  {
+    "front": "What is association?",
+    "back": "- a relationship between 2 classes",
+    "section": "4.1"
+  },
+  {
+    "front": "What are the 2 types of association?",
+    "back": "-composition\n-aggregation",
+    "section": "4.1"
+  },
+  {
+    "front": "What is aggregation?",
+    "back": "- a type of association where the aggregated object has a weaker form of association with the objects that it is aggregating than is the case with composition \n-these objects have an existence independent of the aggregated object & can continue to exist event after the aggregated object is disposed of",
+    "section": "4.1"
+  },
+  {
+    "front": "What is composition?",
+    "back": "- a type of association where the relationship is stronger \n- if containing object is destroyed → associated object is also destroyed",
+    "section": "4.1"
+  },
+  {
+    "front": "What is polymorphism?",
+    "back": "- concept that different objects can respond to the same method call in different ways based on their class",
+    "section": "4.1"
+  },
+  {
+    "front": "What is overriding?",
+    "back": "- an overridden method has the same name as a method from an inherited class but different implementation",
+    "section": "4.1"
+  },
+  {
+    "front": "Why is the object-oriented paradigm used?",
+    "back": "- code reusability → classes reused & inheritance to share code → saves time & reduces duplication\n- easier maintenance & testing → changes made in one place update multiple parts\n- data security through encapsulation → prevents accidental misuse\n- large projects divided among developers → quicker development",
+    "section": "4.1"
+  },
+  {
+    "front": "What are the 3 object-oriented design principles?",
+    "back": "- encapsulate what varies\n- favour composition over inheritance\n- program to interfaces, not implementation",
+    "section": "4.1"
+  },
+  {
+    "front": "What does ‘encapsulate what varies’ mean as a object-oriented design principle?",
+    "back": "- separation of code that might need to be constantly changed\n- areas of code that might need to be changed can be encapsulated behind an interface \n→ when any changes are needed → software written to use the interface does not need to be changed",
+    "section": "4.1"
+  },
+  {
+    "front": "What does ‘favour composition over inheritance’ mean as an object-oriented design principle?",
+    "back": "- programmers should look to use composition over inheritance when looking at concepts like polymorphism\n→ composition allows behaviour to change dynamically at runtime & avoid rigid class hierarchies → more flexible & reusable program",
+    "section": "4.1"
+  },
+  {
+    "front": "What does ‘program to interfaces, not implementation’ mean as an object-oriented design principle?",
+    "back": "- programmers should look to communicate between parts of a program by using an interface rather than the knowledge of an implementation",
+    "section": "4.1"
+  },
+  {
+    "front": "What is a class diagram?",
+    "back": "- type of UML diagram\n- shows the relationship between classes in a program \n- involve → single inheritance\n→ composition (black diamond line)\n→ aggregation (white diamond line)\n→ public (+) \n→ private (-)\n→ protected (#) specifiers",
+    "section": "4.1"
+  },
+  {
+    "front": "How is composition & aggregation represented in Unified Modelling Language (UML)?",
+    "back": "- black diamond line\n-white diamond line",
+    "section": "4.1"
+  },
+  {
+    "front": "What is a data structure?",
+    "back": "- allows for collection of data to be organised & processed",
+    "section": "4.2"
+  },
+  {
+    "front": "What is an array?",
+    "back": "- data structure that hold a number of elements of the same data type",
+    "section": "4.2"
+  },
+  {
+    "front": "What is a single-dimensional array?",
+    "back": "- single row of values\n- useful to represent a vector",
+    "section": "4.2"
+  },
+  {
+    "front": "What is a two-dimensional array?",
+    "back": "- table of values\n- useful to represent a matrix",
+    "section": "4.2"
+  },
+  {
+    "front": "What is a binary file?",
+    "back": "- a file whose binary content must be interpreted by a program or processor that can identify how the data is formatted\n- generally, any non-text file → e.g. executable, image, movie",
+    "section": "4.2"
+  },
+  {
+    "front": "What is a text file?",
+    "back": "- file whose content is character encoded from a character set, with a new line character being used to separate lines",
+    "section": "4.2"
+  },
+  {
+    "front": "Syntax to write to binary file?",
+    "back": "Imports System.IO\n\nDim fs As New FileStream(“data”, FileMode.Create)\nDim writer As New BinaryWriter(fs)\n\nwriter.Write(“hello”)\n\nwriter.Close()\nfs.Close()",
+    "section": "4.2"
+  },
+  {
+    "front": "Syntax to read from binary file",
+    "back": "Imports System.IO\n\nDim fs As New FileStream(\"data\", FileMode.Open)\nDim reader As New BinaryReader(fs)\n\nDim dbl As Double = reader.ReadDouble()\nDim text As String = reader.ReadString()\n\nConsole.WriteLine(dbl)\nConsole.WriteLine(text)\n\nreader.Close()\nfs.Close()",
+    "section": "4.2"
+  },
+  {
+    "front": "What is an abstract data type?",
+    "back": "- model of a data type that is defined in terms of its behaviour & operations without specifying how these are implemented",
+    "section": "4.2"
+  },
+  {
+    "front": "Syntax for 2D array?",
+    "back": "- declaration: Dim Arr(2,3) As Integer\n- assigning values: Arr(0,0) = 10\n- accessing values: Console.Writeline(Arr(0,0)) \n→ output  = 10\n- looping through: \nFor x As Integer = 0 to 1\nFor y As Integer = 0 to 2 \nConsole.Writeline(Arr(x,y) & “”))",
+    "section": "4.2"
+  },
+  {
+    "front": "Syntax for 1D array",
+    "back": "- declaration: Dim Arr(4) As Integer\n- assigning values: Arr(0) = 10\n- accessing values: Console.Writeline(Arr(0))\n→ output = 10\n- looping: For x = 0 to Arr.Length - 1",
+    "section": "4.2"
+  },
+  {
+    "front": "What is a queue & its characteristics?",
+    "back": "- data structure that follows first in, first out (FIFO) principle\n\n- enqueue → adding an element to the rear of a queue \n- dequeue → removing an element from the front of queue",
+    "section": "4.2"
+  },
+  {
+    "front": "What is a linear queue?",
+    "back": "- linear data structure where elements are added to the rear of the queue & removed from front → follows FIFO\n- implemented in an array with pointers (indices) to element at front & element at rear \n- front/rear incremented with each dequeue/enqueue\n- or implemented with linked list → uses nodes & pointers to store elements & manage connections between them",
+    "section": "4.2"
+  },
+  {
+    "front": "What is a circular queue?",
+    "back": "- implemented with an array\n- when the array element with largest possible index has been used → next element to join queue reuses any vacated locations at the beginning of the array",
+    "section": "4.2"
+  },
+  {
+    "front": "What is a priority queue?",
+    "back": "- each element has an associated priority \n- elements are dequeued in order of priority \n→ 2 elements with same priority →element added first, removed first",
+    "section": "4.2"
+  },
+  {
+    "front": "Advantages of using circular queues",
+    "back": "- more memory efficient → front & rear pointers can move over the two ends of the queue",
+    "section": "4.2"
+  },
+  {
+    "front": "Advantages of linear queues",
+    "back": "- simple & easy to implement \n- easy to understand \n- suitable for basic tasks (e.g. printing queue)",
+    "section": "4.2"
+  },
+  {
+    "front": "Disadvantages of linear queues",
+    "back": "- wasted space → one elements are dequeued → space at front isn’t reused\n- can cause overflow even with free space",
+    "section": "4.2"
+  },
+  {
+    "front": "Disadvantages of circular queues",
+    "back": "- more complex to implement than linear queue\n- requires careful handling of front and rear pointers",
+    "section": "4.2"
+  },
+  {
+    "front": "Advantages of priority queues",
+    "back": "- elements processed based on priority not just order\n- useful for scheduling (e.g. CPU tasks)",
+    "section": "4.2"
+  },
+  {
+    "front": "Disadvantages of priority queues",
+    "back": "- more complex to implement \n- requires ordering → slower than simple queues",
+    "section": "4.2"
+  },
+  {
+    "front": "What is a stack & its characteristics?",
+    "back": "- data structure that follows last in, first out (LIFO) principle\n- push → adding element to top of stack\n- pop → removing element from top of stack\n- peek → looking at element at top of stack",
+    "section": "4.2"
+  },
+  {
+    "front": "How is a stack usually represented?",
+    "back": "- in an array with a pointer (index) to the element at the top of the stack \n- pointer is incremented with each addition & decremented with each removal",
+    "section": "4.2"
+  },
+  {
+    "front": "Advantages of using a stack",
+    "back": "- simple to implement \n- efficient data access\n- useful for recursion",
+    "section": "4.2"
+  },
+  {
+    "front": "Disadvantages of using a stack",
+    "back": "- fixed size if implemented with an array\n- risk of underflow → removing from an empty stack",
+    "section": "4.2"
+  },
+  {
+    "front": "What is a graph?",
+    "back": "- diagram consisting of vertices joined by edges\n- used to represent networks → transport networks",
+    "section": "4.2"
+  },
+  {
+    "front": "What is a weighted graph?",
+    "back": "- values are associated with the edges on a graph",
+    "section": "4.2"
+  },
+  {
+    "front": "What is a directed graph?",
+    "back": "- diagram consisting of vertices joined by directed edges",
+    "section": "4.2"
+  },
+  {
+    "front": "What 2 ways can graph be represented?",
+    "back": "- adjacency matrix \n- adjacency list",
+    "section": "4.2"
+  },
+  {
+    "front": "What is an adjacency matrix?",
+    "back": "- 2D array that records the relationship between nodes in a graph \n- for graph with n nodes → create n x n matrix",
+    "section": "4.2"
+  },
+  {
+    "front": "What is an adjacency list?",
+    "back": "- list of all nodes & for each nodes we record neighbouring nodes",
+    "section": "4.2"
+  },
+  {
+    "front": "Advantages & disadvantages of adjacency matrix to represent a graph",
+    "back": "+ time efficient → specific edge can be queried quickly → looked up be row & column \n+ suitable for dense graphs → large no. edges\n\n- memory inefficient \n→ stores every possible edge & node, even those that do not exist \n→ half the matrix is repeated data",
+    "section": "4.2"
+  },
+  {
+    "front": "Advantages & disadvantages of using adjacency list to represent a graph",
+    "back": "+ memory efficient → only stores edges that exist in graph\n+ suitable for sparse graphs → few edges\n\n- time inefficient → each item in list must be searched sequentially until desired edge is found",
+    "section": "4.2"
+  },
+  {
+    "front": "What is a tree?",
+    "back": "- connected, undirected graph with no cycles\n\n- does not have to have a root",
+    "section": "4.2"
+  },
+  {
+    "front": "What is a rooted tree?",
+    "back": "- tree in which one vertex has been designated as the root\n- has parent-child relationships between nodes \n- root is the only node with no parent & all other nodes are descendants of the root",
+    "section": "4.2"
+  },
+  {
+    "front": "What is a binary tree?",
+    "back": "- rooted tree which each node has at most 2 children",
+    "section": "4.2"
+  },
+  {
+    "front": "What is a common application of a binary tree?",
+    "back": "- binary search tree",
+    "section": "4.2"
+  },
+  {
+    "front": "What can rooted trees be used to represent?",
+    "back": "- family trees\n- file systems on computer’s hard drive",
+    "section": "4.2"
+  },
+  {
+    "front": "What is a hash table?",
+    "back": "- data structure that creates a mapping between keys & values",
+    "section": "4.2"
+  },
+  {
+    "front": "How does a hashing algorithm work?",
+    "back": "- takes an input & returns a hash\n- hash is a unique to its input & cannot be reversed to retrieve the input",
+    "section": "4.2"
+  },
+  {
+    "front": "When does collision occur in a hash table?",
+    "back": "- two key values compute the same hash",
+    "section": "4.2"
+  },
+  {
+    "front": "How can collisions in hash table be handled?",
+    "back": "- rehashing → finding available position according to an agreed procedure\n\ne.g. keep moving to next position until available one is found",
+    "section": "4.2"
+  },
+  {
+    "front": "What is a dictionary?",
+    "back": "- collection of key-value pairs in which the value is accessed via the associated key",
+    "section": "4.2"
+  },
+  {
+    "front": "How would the document 'The green, green\ngrass grows' be represented by the\ndictionary?",
+    "back": "- {‘grass’ : 1, ‘green’ : 2, ‘grows’ : 1, ‘the’ : 1}\n- ignoring letter case",
+    "section": "4.2"
+  },
+  {
+    "front": "What is a vector?",
+    "back": "- a quantity having a direction & magnitude",
+    "section": "4.2"
+  },
+  {
+    "front": "What does ↦ mean?",
+    "back": "- maps to",
+    "section": "4.2"
+  },
+  {
+    "front": "Notations for specifying vectors",
+    "back": "- List of numbers → [2.0, 3.14159, -1.0, 2.718281828]\n- Vector space over a field → 4-vector over ℝ written as ℝ^4\n- Function → 0 ↦ 2.0\n- Point in space → (12, 7, 3, 5)",
+    "section": "4.2"
+  },
+  {
+    "front": "What is the best way to represent a vector if it is viewed as a function?",
+    "back": "- dictionary",
+    "section": "4.2"
+  },
+  {
+    "front": "What does f : S → ℝ mean?",
+    "back": "- the set S = {0,1,2,3} and the co-domain, ℝ, the\nset of Reals",
+    "section": "4.2"
+  },
+  {
+    "front": "Syntax for 1D array representation of vector",
+    "back": "- Dim Vector(4) As Integer = {1,2,3,4,5}\n- Console.Writeline(Vector(0)) → Output = 1",
+    "section": "4.2"
+  },
+  {
+    "front": "Syntax for list representation of vector",
+    "back": "- Dim Vector As New List(Of Integer)\n- Vector.Add(1)\n- Console.Writeline(Vector(0))",
+    "section": "4.2"
+  },
+  {
+    "front": "Syntax for dictionary representation of vector",
+    "back": "- Dim Vector As New Dictionary(Of Integer, Integer)\n- Vector.Add(0,1)\n- Console.Writeline(Vector(0)) → Output = 1",
+    "section": "4.2"
+  },
+  {
+    "front": "What does vector addition achieve?",
+    "back": "- translation",
+    "section": "4.2"
+  },
+  {
+    "front": "What does vector multiplication achieve",
+    "back": "- scaling",
+    "section": "4.2"
+  },
+  {
+    "front": "What is the convex combination of 2 vectors, u & v?",
+    "back": "- an expression in the form:\nα u + β v where α, β ≥ 0 and α + β = 1",
+    "section": "4.2"
+  },
+  {
+    "front": "Formula for dot/scalar product between 2 vectors \n(u & v)",
+    "back": "u = [u1, …., un ] & v = [v1, ….., vn ] \nis\nu ∙ v = u1v1 + u2v2 + …… + unvn",
+    "section": "4.2"
+  },
+  {
+    "front": "Formula for angle between 2 vectors",
+    "back": "- a · b = |a||b| / cosϴ",
+    "section": "4.2"
+  },
+  {
+    "front": "What is a breadth-first search?",
+    "back": "- graph traversal algorithm using a queue\n- visits all nodes on the same level before moving on to next level",
+    "section": "4.3"
+  },
+  {
+    "front": "Application of breadth first search?",
+    "back": "- shortest path for unweighted graph",
+    "section": "4.3"
+  },
+  {
+    "front": "What is a static data structure?",
+    "back": "- size is fixed\n- memory required to store data structure is determined before run time",
+    "section": "4.2"
+  },
+  {
+    "front": "What is a dynamic data structure?",
+    "back": "- size & memory taken up can vary while a program is running",
+    "section": "4.2"
+  },
+  {
+    "front": "What is heap memory?",
+    "back": "- region of memory used for dynamic allocation \n- as programs request memory → they can be allocated from the heap\n- e.g. request to add elements to dynamic data structure",
+    "section": "4.2"
+  },
+  {
+    "front": "What is a graph traversal?",
+    "back": "- process of visiting each node in a graph",
+    "section": "4.3"
+  },
+  {
+    "front": "What is a depth first search?",
+    "back": "- graph traversal algorithm using a stack\n- proceeds down through a node branch as far as possible before backtracking",
+    "section": "4.3"
+  },
+  {
+    "front": "Application of depth first search",
+    "back": "Navigating a maze",
+    "section": "4.3"
+  },
+  {
+    "front": "What is a tree traversal?",
+    "back": "- process of visiting each node in a tree",
+    "section": "4.3"
+  },
+  {
+    "front": "Three types of tree traversals",
+    "back": "- pre-order \n- in-order\n- post-order",
+    "section": "4.3"
+  },
+  {
+    "front": "Application of pre-order tree traversal",
+    "back": "- copying a tree",
+    "section": "4.3"
+  },
+  {
+    "front": "Application of in-order tree traversal",
+    "back": "- outputting contents of binary search tree in ascending order",
+    "section": "4.3"
+  },
+  {
+    "front": "Application of post-order tree traversal",
+    "back": "- infix to RPN conversion\n- producing postfix expression from an expression tree\n- emptying a tree",
+    "section": "4.3"
+  },
+  {
+    "front": "What is infix notation?",
+    "back": "- standard way of writing mathematical expressions where operators are placed between operands\n→ e.g. 2 + 3 * 4",
+    "section": "4.3"
+  },
+  {
+    "front": "What is prefix notation (Polish notation)?",
+    "back": "- writing mathematical expressions where the operators precede their operands\n→e.g. + 2 * 3 4",
+    "section": "4.3"
+  },
+  {
+    "front": "What is RPN (Reverse Polish notation)/postfix form?",
+    "back": "- form of mathematical notation where operators follow operands \n→e.g. 2 3 4 * +",
+    "section": "4.3"
+  },
+  {
+    "front": "Why is RPN used?",
+    "back": "- eliminates need for brackets in sub-expressions\n- suitable for evaluation using a stack",
+    "section": "4.3"
+  },
+  {
+    "front": "Where is RPN used?",
+    "back": "- in interpreters based on a stack \n→ e.g. Postscript & bytecode",
+    "section": "4.3"
+  },
+  {
+    "front": "What is a linear search algorithm?",
+    "back": "- sequentially checks each element in an array/list until a match is found/end is reached",
+    "section": "4.3"
+  },
+  {
+    "front": "What is the time complexity of a linear search?",
+    "back": "O(n)",
+    "section": "4.3"
+  },
+  {
+    "front": "What is a binary search algorithm?",
+    "back": "- compares a search item to the middle of array/list\n→ if no match → half array/list eliminated & search continues in the other half\n\n- array/list needs to be sorted to perform a binary search",
+    "section": "4.3"
+  },
+  {
+    "front": "What is the time complexity of a binary search?",
+    "back": "- O(log n)",
+    "section": "4.3"
+  },
+  {
+    "front": "What is needed for a binary tree search algorithm to be used?",
+    "back": "- binary tree that is ordered",
+    "section": "4.3"
+  },
+  {
+    "front": "What is a binary tree search algorithm?",
+    "back": "- compare search item to root node\n→ if no match → eliminate half of tree & continue in other half",
+    "section": "4.3"
+  },
+  {
+    "front": "What is the time complexity of a binary tree search?",
+    "back": "- O(log n) → if tree is balanced",
+    "section": "4.3"
+  },
+  {
+    "front": "What is a bubble sort?",
+    "back": "- makes passes through the array/list\n- while making a pass compare neighbours & swap if they are out of order\n- after series of passes → array/list is sorted",
+    "section": "4.3"
+  },
+  {
+    "front": "Time complexity of bubble sort",
+    "back": "- O(n^2)\n- inefficient sorting algorithm, time wise",
+    "section": "4.3"
+  },
+  {
+    "front": "What is a merge sort?",
+    "back": "- divide-and-conquer\n- orginal array/list broken down into smaller parts until we have individual elements \n→ merge sort continues by building back sorted groups until end with full sorted result",
+    "section": "4.3"
+  },
+  {
+    "front": "What is the time complexity of merge sort?",
+    "back": "- O(n logn)",
+    "section": "4.3"
+  },
+  {
+    "front": "What is Dijkstra’s shortest path algorithm?",
+    "back": "- finding shortest path for a whole set of nodes \n→ finds shortest path from a start node to all other nodes in a graph",
+    "section": "4.3"
+  },
+  {
+    "front": "Applications of Dijkstra’s shortest path algorithm",
+    "back": "- GPS & navigation systems\n- network routing",
+    "section": "4.3"
+  },
+  {
+    "front": "What is an algorithm?",
+    "back": "- sequence of steps that can be followed to complete a task & that always terminates",
+    "section": "4.4"
+  },
+  {
+    "front": "What is abstraction?",
+    "back": "- process of removing unnecessary details from a problem",
+    "section": "4.4"
+  },
+  {
+    "front": "What is representational abstracton?i",
+    "back": "- removing unnecessary details",
+    "section": "4.4"
+  },
+  {
+    "front": "What is abstraction by generalisation (or categorisation)?",
+    "back": "- grouping common characteristics to arrive at a hierarchical relationship of the ‘is a kind of’ type",
+    "section": "4.4"
+  },
+  {
+    "front": "What is information hiding?",
+    "back": "- principle of hiding actual implementation of a module & allowing access through a known interface \n- or hiding all details of an object that do not contribute to its essential characteristics",
+    "section": "4.4"
+  },
+  {
+    "front": "What is procedural abstraction?",
+    "back": "- result of abstracting away the actual values used in any particular computation \n= computational pattern or computational method → a procedure\n\n- e.g. CalculateArea = base * height",
+    "section": "4.4"
+  },
+  {
+    "front": "What does procedural abstraction result in?",
+    "back": "- a procedure",
+    "section": "4.4"
+  },
+  {
+    "front": "What is functional abstraction?",
+    "back": "- a further level of abstraction to procedural abstraction \n- disregards the particular computation method, which is hidden\n- know what the function should do but have abstracted (hidden) the implementation \n\n- e.g. RectangleArea = CalculateArea()",
+    "section": "4.4"
+  },
+  {
+    "front": "What does procedural abstraction represent?",
+    "back": "- a computational method",
+    "section": "4.4"
+  },
+  {
+    "front": "What is data abstraction?",
+    "back": "- methodology that enables us to isolate how a compound data object is used from the details of how it is constructed \n\n- e.g. stack implemented as array & pointer for top of stack",
+    "section": "4.4"
+  },
+  {
+    "front": "What does the abstraction of details of how data are actually represented allow?",
+    "back": "- allows new kinds of data objects to be constructed from previously defined types of data objects",
+    "section": "4.4"
+  },
+  {
+    "front": "What is problem abstraction?",
+    "back": "- details are removed until the problem is represented in a way that is possible to solve \n→ problem reduces to one that has already been solved",
+    "section": "4.4"
+  },
+  {
+    "front": "What is procedural decomposition?",
+    "back": "- breaking a problem into a number of sub-problems \n→so each sub-problem accomplishes an identifiable task → which might itself be further subdivided",
+    "section": "4.4"
+  },
+  {
+    "front": "How is composition abstraction built?",
+    "back": "- built by combining procedures to form compound procedures to form compound procedures",
+    "section": "4.4"
+  },
+  {
+    "front": "How is data abstraction built?",
+    "back": "- combining data objects to form compound data\n\n→ e.g. tree data structure",
+    "section": "4.4"
+  },
+  {
+    "front": "What does automation require?",
+    "back": "- putting models (abstraction of real world object/phenomena) into action to solve problems",
+    "section": "4.4"
+  },
+  {
+    "front": "How is automation achieved? (4 steps)",
+    "back": "- creating algorithms\n- implementing the algorithms in program code (instructions)\n- implementing the models in data structures\n- executing the code",
+    "section": "4.4"
+  },
+  {
+    "front": "What is a regular language?",
+    "back": "- language that can be defined by the use of a regular expression \n- any language that a finite state machine will accept",
+    "section": "4.4"
+  },
+  {
+    "front": "What are 2 equivalent ways of defining a regular language?",
+    "back": "-  regular expressions\n- finite state machines",
+    "section": "4.4"
+  },
+  {
+    "front": "What is a finite state machine (FSM)?",
+    "back": "- model of computation for a machine that is always in one of a fixed number of states",
+    "section": "4.4"
+  },
+  {
+    "front": "How can the state of a FSM be changed?",
+    "back": "- according to transition rules \n→ based upon the input that it receives & its current state",
+    "section": "4.4"
+  },
+  {
+    "front": "What is a FSM with an output called?",
+    "back": "- Mealy machines",
+    "section": "4.4"
+  },
+  {
+    "front": "What is a set?",
+    "back": "- unordered collection of unique elements",
+    "section": "4.4"
+  },
+  {
+    "front": "What is a finite set?",
+    "back": "- one whose elements can be counted off by the natural numbers up to a particular number \n\n→ e.g. 1st element, 2nd element .. final element",
+    "section": "4.4"
+  },
+  {
+    "front": "What does this mean for set A\n\nA = {x | x ∈ ℕ ∧ x ≥ 1 }",
+    "back": "A is the set consisting of those objects x\nsuch that x ∈ ℕ and x ≥ 1 is true",
+    "section": "4.4"
+  },
+  {
+    "front": "How can an empty set be represented?",
+    "back": "- {}\n-  Ø",
+    "section": "4.4"
+  },
+  {
+    "front": "What is this notation called?\n{0^n1^n | n ≥ 1}",
+    "back": "Compact representation of a set",
+    "section": "4.4"
+  },
+  {
+    "front": "What are members of this set?\n{0^n1^n | n ≥ 1}",
+    "back": "{01, 0011, 000111, 00001111, … }",
+    "section": "4.4"
+  },
+  {
+    "front": "What is an infinite set?",
+    "back": "- set which is not finite\n- e.g. ℕ, ℝ",
+    "section": "4.4"
+  },
+  {
+    "front": "What is a countably infinite set?",
+    "back": "- one that can be counted off by the natural numbers",
+    "section": "4.4"
+  },
+  {
+    "front": "What is the cardinality of a finite set?",
+    "back": "- number of elements in a set",
+    "section": "4.4"
+  },
+  {
+    "front": "What is the Cartesian product of two sets (X & Y)?",
+    "back": "- written X x Y (X cross Y)\n- the set of all ordered pairs (a,b) \n→ where a is a member of A & b is a member of B",
+    "section": "4.4"
+  },
+  {
+    "front": "How can A be a subset of B?",
+    "back": "- if every element of a set A belong to set B",
+    "section": "4.4"
+  },
+  {
+    "front": "What is a subset of all sets?",
+    "back": "- the empty set",
+    "section": "4.4"
+  },
+  {
+    "front": "How can A be a proper subset of B?",
+    "back": "- if every element of set A belongs to set B but there is at least 1 element of B that is not in A",
+    "section": "4.4"
+  },
+  {
+    "front": "What is a countable set?",
+    "back": "- set with the same cardinality (number of elements) as some of subset of the natural numbers",
+    "section": "4.4"
+  },
+  {
+    "front": "Why is this true \n1∈ A & 4 ∉ A with a set A = { 1, 2, 3 }",
+    "back": "- 1 is a member of A \n- 4 is not a member of A",
+    "section": "4.4"
+  },
+  {
+    "front": "What does ⊂ mean?",
+    "back": "- proper subset of",
+    "section": "4.4"
+  },
+  {
+    "front": "What does ⊆ mean?",
+    "back": "- subset of",
+    "section": "4.4"
+  },
+  {
+    "front": "What is set difference?",
+    "back": "- all of elements that belong in first set but not in the second",
+    "section": "4.4"
+  },
+  {
+    "front": "Notation for set difference & what it means?",
+    "back": "- A\\B\n- A-B\n\n- A\\B = {x : x ∈ A and x ∉ B}",
+    "section": "4.4"
+  },
+  {
+    "front": "What is set union?",
+    "back": "- all elements that belong to the 2 sets",
+    "section": "4.4"
+  },
+  {
+    "front": "What is set intersection?",
+    "back": "- all elements that belong to both of 2 sets",
+    "section": "4.4"
+  },
+  {
+    "front": "What is a regular expression?",
+    "back": "- way of describing a set (allowed strings)\n→ allow particular types of languages to be described in a convenient shorthand notation",
+    "section": "4.4"
+  },
+  {
+    "front": "How can a language be regular?",
+    "back": "- if it can be represented by a regular expression",
+    "section": "4.4"
+  },
+  {
+    "front": "What does * mean as a metacharacter?",
+    "back": "0 or more repetitions",
+    "section": "4.4"
+  },
+  {
+    "front": "What does + mean as a metacharacter?",
+    "back": "- 1 or more repetitions",
+    "section": "4.4"
+  },
+  {
+    "front": "What does ? mean as a metacharacter?",
+    "back": "- 0 or 1 → optional",
+    "section": "4.4"
+  },
+  {
+    "front": "What does | mean as a metacharacter?",
+    "back": "- Or / alternation",
+    "section": "4.4"
+  },
+  {
+    "front": "Metacharacter to group regular expressions?",
+    "back": "()",
+    "section": "4.4"
+  },
+  {
+    "front": "What is the relationship between regular expressions & FSMs?",
+    "back": "- equivalent ways of defining a regular language",
+    "section": "4.4"
+  },
+  {
+    "front": "How can a context-free language be described?",
+    "back": "- by a context-free grammar / set of rules for deriving strings in a language",
+    "section": "4.4"
+  },
+  {
+    "front": "2 ways of defining the grammar for a context-free language?",
+    "back": "- Backus-Naur form\n- syntax diagrams",
+    "section": "4.4"
+  },
+  {
+    "front": "What is Backus-Naur Form?",
+    "back": "- used to define a context-free grammar to define the syntax rules of a programming language \n- BNF allows us to write production rules that use terminal & non-terminal symbols",
+    "section": "4.4"
+  },
+  {
+    "front": "What does using recursion in BNF production rules allow?",
+    "back": "- definition of ‘one of more’ of a symbol",
+    "section": "4.4"
+  },
+  {
+    "front": "What is big-O notation?",
+    "back": "- algorithmic complexity is a means of comparing the efficiency of an algorithm\n- measured in terms of time complexity or space complexity\n-complexity varies in terms of size of input \n- allows comparison of algorithms",
+    "section": "4.4"
+  },
+  {
+    "front": "What is time complexity?",
+    "back": "- time taken to complete the algorithm",
+    "section": "4.4"
+  },
+  {
+    "front": "What is space complexity?",
+    "back": "- memory space needed for an algorithm",
+    "section": "4.4"
+  },
+  {
+    "front": "What are 2 ways to describe a more efficient algorithm?",
+    "back": "- time-wise\n- space-wise",
+    "section": "4.4"
+  },
+  {
+    "front": "What does efficiently implementing automated abstractions means for designing data models and algorithms?",
+    "back": "- run quickly while taking up minimal amount of resources → e.g. memory",
+    "section": "4.4"
+  },
+  {
+    "front": "What is the mathematical definition of a function?",
+    "back": "- mapping one set of values (domain) to another set of values (drawn from the co-domain) \n\n→ e.g.  ℕ → ℕ",
+    "section": "4.4"
+  },
+  {
+    "front": "What is a permutation?",
+    "back": "- number of ways a particular set can be arranged",
+    "section": "4.4"
+  },
+  {
+    "front": "How many permutations are there of n distinct objects?",
+    "back": "- n!",
+    "section": "4.4"
+  },
+  {
+    "front": "Order of complexity of algorithm (least to most)",
+    "back": "- contant → O(c)\n- logarithmic → O(log(n))\n- linear →O(n)\n- linear logarithmic → O(nlog(n))\n- polynomial → O(n^2)\n- exponential → O(2^n)\n- factorial → O(n!)",
+    "section": "4.4"
+  },
+  {
+    "front": "How to recognise & example of algorithm with constant complexity?",
+    "back": "- time is independent of input\n- determining if number is odd or even",
+    "section": "4.4"
+  },
+  {
+    "front": "How can an algorithm with logarithmic complexity be recognised & example?",
+    "back": "- halves the number of items in each iteration\n- binary search",
+    "section": "4.4"
+  },
+  {
+    "front": "How can a algorithm with linear complexity be recognised & example?",
+    "back": "- must go through each item once\n- linear search",
+    "section": "4.4"
+  },
+  {
+    "front": "What is an example of an algorithm with linear logarithmic complexity?",
+    "back": "- merge sort",
+    "section": "4.4"
+  },
+  {
+    "front": "How can an algorithm with polynomial complexity be recognised?",
+    "back": "- loop inside a loop (inside a loop …)\n- for algorithm with n^x complexity → x loops",
+    "section": "4.4"
+  },
+  {
+    "front": "Example of algorithm with O(n^2) complexity",
+    "back": "- bubble sort",
+    "section": "4.4"
+  },
+  {
+    "front": "What are 2 limits on computation",
+    "back": "- algorithmic complexity\n- hardware",
+    "section": "4.4"
+  },
+  {
+    "front": "What is a tractable problem?",
+    "back": "- problems that are computable & have polynomial (or less) time solution",
+    "section": "4.4"
+  },
+  {
+    "front": "What is an intractable problem?",
+    "back": "- problem that are computable but have no polynomial (or less) time solution",
+    "section": "4.4"
+  },
+  {
+    "front": "What methods are used when tackling intractable problems?",
+    "back": "- heuristic methods",
+    "section": "4.4"
+  },
+  {
+    "front": "What is a heuristic approach?",
+    "back": "- uses experience to make informed guesses that assist in finding a polynomial time ‘solution’ to an intractable problem \n- solution may be non-optimal",
+    "section": "4.4"
+  },
+  {
+    "front": "What is a computable problem?",
+    "back": "- ability to solve the problem with use of an algorithm",
+    "section": "4.4"
+  },
+  {
+    "front": "What is non-computable problem?",
+    "back": "- a problem for which there is no algorithm that can be used to solve it",
+    "section": "4.4"
+  },
+  {
+    "front": "What is the Halting problem?",
+    "back": "- unsolvable problem of writing a computer program that can tell whether a given program & its inputs will halt, without running the given program",
+    "section": "4.4"
+  },
+  {
+    "front": "What does Halting problem demonstrate?",
+    "back": "- some problems cannot be solved by a computer",
+    "section": "4.4"
+  },
+  {
+    "front": "What does a state transition table show?",
+    "back": "- state a FSM will move to based on the current state & inputs",
+    "section": "4.4"
+  },
+  {
+    "front": "What does a state transition diagram represent?",
+    "back": "- graphically represents a FSM \n- states represented by nodes \n- edges represent transitions between states & normally directed & labelled with the input (sometimes output) symbols\n- accepting state(s) drawn as double circles",
+    "section": "4.4"
+  },
+  {
+    "front": "What is a Turing machine’s transition rule?",
+    "back": "- defines the behaviour when reading a specific symbol from the tape in the current state \n- defines what to write to the tape, how to move the tap & the next state",
+    "section": "4.4"
+  },
+  {
+    "front": "What is a transition function of a Turning machine?",
+    "back": "- mapping from a current state & input to the next state & any output\n\n- δ(SCurrent , input) = (SNext , output)",
+    "section": "4.4"
+  },
+  {
+    "front": "What is a Turning machine?",
+    "back": "- computer with a single fixed program expressed using:\n→ finite set of states in a state transition diagram\n→ finite alphabet of symbols\n→ infinite tape with marked-off squares\n→ sensing read-write head that can travel along the tape, 1 square at a time\n- with 1 start state \n- may have halting states",
+    "section": "4.4"
+  },
+  {
+    "front": "What is a universal Turing machine?",
+    "back": "- can simulate any other Turing machine",
+    "section": "4.4"
+  },
+  {
+    "front": "What is the importance of Turing machines?",
+    "back": "- provides formal model of computation → definition of what is computable\n- proves that some problems cannot be solved by computer",
+    "section": "4.4"
+  }
+]

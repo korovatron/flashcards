@@ -1,0 +1,2817 @@
+[
+  {
+    "front": "What are the Natural numbers (ℕ)",
+    "back": "∙ℕ = {0, 1, 2, 3, … } \n∙for counting",
+    "section": "4.5"
+  },
+  {
+    "front": "What are the Integers (ℤ)?",
+    "back": "ℤ = { …, -3, -2, -1, 0, 1, 2 … }",
+    "section": "4.5"
+  },
+  {
+    "front": "What are the Rational numbers(ℚ)?",
+    "back": "∙numbers that can be written as fractions\n ∙numerator & denominator are integers",
+    "section": "4.5"
+  },
+  {
+    "front": "What are the Irrational numbers?",
+    "back": "cannot be written as fractions",
+    "section": "4.5"
+  },
+  {
+    "front": "What are the Real numbers(ℝ)?",
+    "back": "・set of all ‘possible real world quantities’\n• rational & irrational numbers\n・for measurement",
+    "section": "4.5"
+  },
+  {
+    "front": "What are ordinal numbers?",
+    "back": "Describe the position of objects when placed in order",
+    "section": "4.5"
+  },
+  {
+    "front": "What is the minimum storage space a bitmapped graphic needs?",
+    "back": "no.pixels x bit depth",
+    "section": "4.5"
+  },
+  {
+    "front": "What are the number bases?",
+    "back": "・decimal (base 10)\n・binary (base 2)\n・hexadecimal (base 16)",
+    "section": "4.5"
+  },
+  {
+    "front": "Examples of representations of hexadecimals?",
+    "back": "・colour codes\n・MAC addresses",
+    "section": "4.5"
+  },
+  {
+    "front": "Why is using hexadecimal better than binary?",
+    "back": "・shorter representation / can be displayed with fewer digits\n・easier for people to understand",
+    "section": "4.5"
+  },
+  {
+    "front": "What is a bit?",
+    "back": "・Fundamental unit of information\n・either 0 or 1",
+    "section": "4.5"
+  },
+  {
+    "front": "Define resolution of a bitmapped graphic image",
+    "back": "- clarity of an image \n- resolution expressed as the number of pixels an image contains per inch (ppi)\n\n- size of an image in pixels",
+    "section": "4.5"
+  },
+  {
+    "front": "How to work out range of numbers from number of bits(n)?",
+    "back": "2^n",
+    "section": "4.5"
+  },
+  {
+    "front": "What is a byte?",
+    "back": "Group of 8 bits",
+    "section": "4.5"
+  },
+  {
+    "front": "How many bytes in a \n・Kibibyte (Ki)\n・Mebibyte (Mi)\n・Gibibyte (Gi)\n・Tebibyte (Ti)",
+    "back": "・2^10\n・2^20 \n・2^30\n・2^40",
+    "section": "4.5"
+  },
+  {
+    "front": "How many bytes in a \n・Kilobyte (K)\n・Megabyte (M)\n・Gigabyte (G)\n・Terabyte (T)",
+    "back": "・10^3\n・10^6\n・10^9\n・10^12",
+    "section": "4.5"
+  },
+  {
+    "front": "What is an unsigned binary number?",
+    "back": "A binary number without a +/- sign\n- only represent non-negative values (0 & positive integers)",
+    "section": "4.5"
+  },
+  {
+    "front": "What is the biggest & smallest number for an unsigned binary number with n bits?",
+    "back": "Smallest = 0\nBiggest = 2^n - 1",
+    "section": "4.5"
+  },
+  {
+    "front": "What is the start of a positive / negative Two’s Complement binary number?",
+    "back": "・positive = 01\n・negative = 10",
+    "section": "4.5"
+  },
+  {
+    "front": "How many bits does ASCII use & how many different characters can be represented?",
+    "back": "・7 bits\n・2^7 =128 characters",
+    "section": "4.5"
+  },
+  {
+    "front": "How many bits does Unicode use per character?",
+    "back": "8 to 32 bits per character",
+    "section": "4.5"
+  },
+  {
+    "front": "Why is Unicode better than ASCII?",
+    "back": "・representation of greater range of characters → more languages represented → increased communication across countries\n・improved portability of documents",
+    "section": "4.5"
+  },
+  {
+    "front": "Methods of error checking & correction of transmitted data",
+    "back": "・parity bits\n・majority voting \n・check digits",
+    "section": "4.5"
+  },
+  {
+    "front": "How do parity bits work?",
+    "back": "・a single bit is added to transmission\n・value calculated based on transmitted data\n→even/odd no.1s in data\n・data received & parity check occurs \n・incorrect value → sender re-transmits data",
+    "section": "4.5"
+  },
+  {
+    "front": "Role of sender & receiver in an even parity bit system",
+    "back": "・sender → checks no.1s in bit pattern → adds extra bit to ensure even no.1s\n・receiver → counts no.1s in bit pattern → odd no.1s shows an error has occurred",
+    "section": "4.5"
+  },
+  {
+    "front": "Advantage of parity bits",
+    "back": "・very efficient",
+    "section": "4.5"
+  },
+  {
+    "front": "Disadvantage of parity bits",
+    "back": "・odd/even no.bits changed using odd/even parity bit → change is not detected",
+    "section": "4.5"
+  },
+  {
+    "front": "How does majority voting work?",
+    "back": "・each bit is transmitted multiple times\n・receiver checks bits it received \n・not the same → bit with most copies received is used as the correct value",
+    "section": "4.5"
+  },
+  {
+    "front": "Advantages of majority voting",
+    "back": "∙can detect & correct data → majority bit is taken as the correct value → no need for retransmission \n・can detect multiple errors → each triplet of bits represents one bit of data",
+    "section": "4.5"
+  },
+  {
+    "front": "What does the graph of \n・analogue signals\n・digital signals\nlook like?",
+    "back": "・smooth curves with peaks\n・sharp edges & vertical drops",
+    "section": "4.5"
+  },
+  {
+    "front": "Disadvantage of majority voting",
+    "back": "・↑ Volume of data transmitted → ↑time taken to transmit data → inefficient",
+    "section": "4.5"
+  },
+  {
+    "front": "What is a checksum?",
+    "back": "・value calculated using an algorithm from data in the input system \n→ checksum recalculated when packet is received\n→checksum received = recalculated checksum → data received correctly \n→checksum received not equal ≠ recalculated checksum → corrupted data",
+    "section": "4.5"
+  },
+  {
+    "front": "What are check digits?",
+    "back": "・type of checksum → single digit calculated using an algorithm from other digits in the input sequence to help detect errors",
+    "section": "4.5"
+  },
+  {
+    "front": "Advantages of check digits",
+    "back": "・↓ no.different algorithms used to calculate value",
+    "section": "4.5"
+  },
+  {
+    "front": "Disadvantages of check digits",
+    "back": "・↓ variety of errors that can be detected → errors cannot be corrected",
+    "section": "4.5"
+  },
+  {
+    "front": "What is a pixel?",
+    "back": "The smallest addressable element of a picture",
+    "section": "4.5"
+  },
+  {
+    "front": "What is analogue data?",
+    "back": "Continuous data → can take any value in a given range",
+    "section": "4.5"
+  },
+  {
+    "front": "What is digital data?",
+    "back": "Discrete data → only takes some values",
+    "section": "4.5"
+  },
+  {
+    "front": "What is an analogue signal?",
+    "back": "・Take any value \n・Can change as frequently as required",
+    "section": "4.5"
+  },
+  {
+    "front": "What is a digital signal?",
+    "back": "・Always takes one of a specified range of values\n・only changes value of specified intervals",
+    "section": "4.5"
+  },
+  {
+    "front": "How does an ADC (analogue to digital converter) work?",
+    "back": "・takes samples of the analogue signal at regular intervals \n・amplitude of each sample is approximated to an integer value\n・each sample is encoded as a binary value",
+    "section": "4.5"
+  },
+  {
+    "front": "How can an analogue signal be better reproduced?",
+    "back": "ADC taking a higher number of samples per second",
+    "section": "4.5"
+  },
+  {
+    "front": "How does a DAC (digital to analogue converter) work?",
+    "back": "・reads a bit pattern (digital data) & converts it back to an analogue signal\n・outputs an alternating electrical current suitable for sending down a cable for headphones/speakers to use",
+    "section": "4.5"
+  },
+  {
+    "front": "Uses of DAC",
+    "back": "Digital audio signal to analogue signal",
+    "section": "4.5"
+  },
+  {
+    "front": "What is a bitmapped graphic?",
+    "back": "Image broken down into rectangular grid of pixels\n→ colour of each pixel in the grid is represented by a number",
+    "section": "4.5"
+  },
+  {
+    "front": "Define colour depth",
+    "back": "・no.bits used to represent colour value of a single pixel\n\n→ colour depth of 2 = 2 bits per pixel = 4 unique colours",
+    "section": "4.5"
+  },
+  {
+    "front": "Why might bitmapped graphics require more than minimum storage space?",
+    "back": "Bitmap image may contain metadata",
+    "section": "4.5"
+  },
+  {
+    "front": "Examples of metadata",
+    "back": "- image dimensions\n- data/time of creation\n- geographical location of image\n- camera settings \n- file format\n- colour format",
+    "section": "4.5"
+  },
+  {
+    "front": "What are vector graphics?",
+    "back": "・represents images using geometric objects & shapes\n・properties of objects stored:\n→ fill colour\n→ line colour\n→coordinates or certain points/centre\n→ width/height/diameter",
+    "section": "4.5"
+  },
+  {
+    "front": "Advantages of vector graphics",
+    "back": "・for geometric shapes → ↓storage space required \n・for geometric shapes → will load faster from secondary storage\n・can be scaled & resized without distortion\n・image can be searched for particular objects",
+    "section": "4.5"
+  },
+  {
+    "front": "Disadvantages of vector graphics",
+    "back": "・only appropriate for images made of geometric shapes\n・unsuitable if colour of each pixel is likely to vary\n・takes longer to render an image",
+    "section": "4.5"
+  },
+  {
+    "front": "Advantage of bitmapped graphics",
+    "back": "Can store photos",
+    "section": "4.5"
+  },
+  {
+    "front": "Disadvantages of bitmapped graphic",
+    "back": "・can become blurry/pixelated\n・uses more storage space",
+    "section": "4.5"
+  },
+  {
+    "front": "How do computers represent sound?",
+    "back": "Represents sound as a sequence of samples → takes a discrete digital value",
+    "section": "4.5"
+  },
+  {
+    "front": "What is the sampling rate?",
+    "back": "- measure of number of samples taken per second from an analogue signal to create a digital signal \n\n→ measured in hertz (Hz)",
+    "section": "4.5"
+  },
+  {
+    "front": "What does a higher resolution do?",
+    "back": "・greater audio quality\n・↑ file size",
+    "section": "4.5"
+  },
+  {
+    "front": "How to calculate the size of a sound sample?",
+    "back": "Duration x sampling rate x sample resolution",
+    "section": "4.5"
+  },
+  {
+    "front": "What is Nyquist’s Theorem?",
+    "back": "- to create an accurate representation, sample rate must be at least twice the frequency of the highest frequency component of the original sound",
+    "section": "4.5"
+  },
+  {
+    "front": "What does MIDI stand for?",
+    "back": "Musical Instrument Digital Interface",
+    "section": "4.5"
+  },
+  {
+    "front": "What does MIDI do?",
+    "back": "- music represented as a sequence of MIDI event messages:\n→ channel (left/right)\n→ note on/note off\n→ pitch/frequency/note number \n→volume/loudness \n→ velocity\n→aftertouch \n→timbre \n→ instrument \n→pitch bend",
+    "section": "4.5"
+  },
+  {
+    "front": "Advantages of using MIDI to represent music",
+    "back": "・more compact representation\n・easy to modify individual notes/instruments\n• musical score can be produced directly from MIDI file\n• MIDI files can directly control digital musical instruments\n• MIDI records musician’s inputs rather than sound produced",
+    "section": "4.5"
+  },
+  {
+    "front": "Disadvantages of MIDI",
+    "back": "Cannot store speech → less realistic sound than sampled recordings",
+    "section": "4.5"
+  },
+  {
+    "front": "What is data compression?",
+    "back": "・files compressed to reduce size → transferred faster between storage devices\n・can compress images, sound files, text files",
+    "section": "4.5"
+  },
+  {
+    "front": "What is lossy compression?",
+    "back": "・results in lost data → eg. reducing resolution or lowering sample resolution\n- cannot recreate original data only approximation of it",
+    "section": "4.5"
+  },
+  {
+    "front": "Advantage of lossy compression",
+    "back": "No limit to the extent that the file size can be reduced",
+    "section": "4.5"
+  },
+  {
+    "front": "What is lossless compression?",
+    "back": "Compression system where the original file can be exactly reproduced from the compressed data",
+    "section": "4.5"
+  },
+  {
+    "front": "Advantage of lossless compression",
+    "back": "data can be reproduced identically to original with no loss of quality",
+    "section": "4.5"
+  },
+  {
+    "front": "Advantages of RLE",
+    "back": "+lossless → quality not affected",
+    "section": "4.5"
+  },
+  {
+    "front": "What is encryption?",
+    "back": "using an algorithm to convert a message into a form that is not understandable without the key to decrypt it",
+    "section": "4.5"
+  },
+  {
+    "front": "What is plaintext?",
+    "back": "Message data before it has been encrypted",
+    "section": "4.5"
+  },
+  {
+    "front": "What is cipher text?",
+    "back": "Message data after it has been encrypted",
+    "section": "4.5"
+  },
+  {
+    "front": "What is an encryption key?",
+    "back": "Used to decrypt cipher text",
+    "section": "4.5"
+  },
+  {
+    "front": "What is the Caesar cipher?",
+    "back": "- cipher where characters are moved along the alphabet → with key indicating no. positions a character should be moved",
+    "section": "4.5"
+  },
+  {
+    "front": "What is the Vernam cipher?",
+    "back": "- uses one-time pad (key) \n- XOR plaintext against key to generate ciphertext\n- XOR ciphertext with key returns to plaintext \n- perfect security",
+    "section": "4.5"
+  },
+  {
+    "front": "Method of Vernam cipher",
+    "back": "1) Align characters of plain & cipher text\n2) Convert characters to binary (using ASCII)\n3) Apply logical XOR\n4) Convert to character",
+    "section": "4.5"
+  },
+  {
+    "front": "What are the conditions for a Vernam cipher to be perfectly secure?",
+    "back": "・key must not be reused \n・key must be truly random\n・key must be as long as plaintext\n• key must be kept securely",
+    "section": "4.5"
+  },
+  {
+    "front": "Why is the Caesar cipher insecure?",
+    "back": "・each plaintext letter is always converted to the same cipher text letter\n・frequency analysis of cipher text can easily reveal details about plaintext \n• only 26 possible mappings from plaintext to cipher text\n・brute force can be used to try all possible mappings",
+    "section": "4.5"
+  },
+  {
+    "front": "Why is the Vernam cipher perfectly secure?",
+    "back": "・cipher text contains no useful info about plaintext\n・mapping from plaintext to cipher text is different for each letter position in plain text\n・brute force cannot reveal plaintext",
+    "section": "4.5"
+  },
+  {
+    "front": "What is computational security?",
+    "back": "- all cryptographic algorithms except for Vernam Cipher can be broken given enough time & cipher text\n\n- ability of an encryption algorithm to not be broken in ‘reasonable time’ → reasonable time depends on plaintext",
+    "section": "4.5"
+  },
+  {
+    "front": "What is hardware?",
+    "back": "Physical/electronic components of the computer system",
+    "section": "4.6"
+  },
+  {
+    "front": "What is software?",
+    "back": "Programs/code/instructions executed by the hardware",
+    "section": "4.6"
+  },
+  {
+    "front": "Types of\n・internal\n・external\nhardware",
+    "back": "・hard drives, processor\n・printer, monitor",
+    "section": "4.6"
+  },
+  {
+    "front": "Examples of software",
+    "back": "・word processor\n・web browser\n・image editor",
+    "section": "4.6"
+  },
+  {
+    "front": "Types of software",
+    "back": "・application software\n・system software",
+    "section": "4.6"
+  },
+  {
+    "front": "What is application software?",
+    "back": "Software that performs end-user tasks → tasks users may complete without a computer (writing letters)",
+    "section": "4.6"
+  },
+  {
+    "front": "Types of application software",
+    "back": "・general purpose software - do different tasks → eg. word processor\n・bespoke software -written to customer’s needs\n・special purpose software - carries out specific tasks",
+    "section": "4.6"
+  },
+  {
+    "front": "What is system software?",
+    "back": "Software that manages the computer system resources & acts as a platform to run application software",
+    "section": "4.6"
+  },
+  {
+    "front": "Types of system software",
+    "back": "・operating system\n・utility programs\n・library programs\n・translators",
+    "section": "4.6"
+  },
+  {
+    "front": "What is an operating system?",
+    "back": "- hides complexities of hardware from user\n- handles:\n→ resource management \n→ managing hardware to allocate processors, memories, input/output (I/O) devices",
+    "section": "4.6"
+  },
+  {
+    "front": "What are utility programs?",
+    "back": "Software that performs a specific function that helps maintain a system\n- backup, encryption, compression software\n→ eg. virus scanner, disk defragmenter",
+    "section": "4.6"
+  },
+  {
+    "front": "What are library programs?",
+    "back": "- provide routines that can be included in a program\n→ included pre-written code & subroutines → saves memory as routines only loaded when needed",
+    "section": "4.6"
+  },
+  {
+    "front": "What are translators?",
+    "back": "・convert source code into machine code\n→ assembler, compiler, interpreter",
+    "section": "4.6"
+  },
+  {
+    "front": "What is a low level language?",
+    "back": "・closer to hardware & computer’s instruction set",
+    "section": "4.6"
+  },
+  {
+    "front": "Examples of low level languages",
+    "back": "・machine code (1st gen)\n・assembly language (2nd gen)",
+    "section": "4.6"
+  },
+  {
+    "front": "What is machine code?",
+    "back": "- actual binary instructions that can be executed by a processor\n- is specific to a processor/family of processors",
+    "section": "4.6"
+  },
+  {
+    "front": "Disadvantages of LLLs",
+    "back": "Prone to errors",
+    "section": "4.6"
+  },
+  {
+    "front": "Advantages of machine code",
+    "back": "・no need to translate machine code before execution → useful for embedded systems\n・directly executed by the processor → quicker",
+    "section": "4.6"
+  },
+  {
+    "front": "Disadvantages of machine code",
+    "back": "・prone to errors\n・hard to debug\n・not portable\n・difficult for humans to understand",
+    "section": "4.6"
+  },
+  {
+    "front": "What is assembly language?",
+    "back": "・uses mnemonics that represent machine code instructions\n・translated into machine code using assembler",
+    "section": "4.6"
+  },
+  {
+    "front": "Advantages of assembly language",
+    "back": "・faster execution than HLLs\n・less memory used than HLLs\n・can directly manipulate memory contents\n・mnemonics → easier process of writing programs & compact",
+    "section": "4.6"
+  },
+  {
+    "front": "Disadvantages of assembly language",
+    "back": "・easier to make mistakes\n・hard to port code to other types of computers - platform dependent\n・harder to understand than HLLs",
+    "section": "4.6"
+  },
+  {
+    "front": "What is a high level language?",
+    "back": "- more abstracted from hardware of computer & instructions more powerful than in LLL\n・translated into machine code by compiler/interpreter",
+    "section": "4.6"
+  },
+  {
+    "front": "Why are there different types of HLLs",
+    "back": "・access to specific data types\n・provides different function libraries",
+    "section": "4.6"
+  },
+  {
+    "front": "What is the relationship between machine code & assembly language?",
+    "back": "Each assembly language instruction translates to one machine code instruction",
+    "section": "4.6"
+  },
+  {
+    "front": "Advantages of HHLs",
+    "back": "- use English-like keywords → easier for human to understand\n- support structured statements → iteration/selection\n- support use of local variables & parameters \n- provide data structures & libraries of useful code",
+    "section": "4.6"
+  },
+  {
+    "front": "Disadvantages of HLLs",
+    "back": "・compiler/interpreter used → time consuming\n・slower execution\n・uses more memory\n・cannot directly manipulate memory contents",
+    "section": "4.6"
+  },
+  {
+    "front": "What is an imperative language?",
+    "back": "・instructions executed in a programmer-defined order\n- program describe how to solve a particular problem/task\n→eg. for games programming",
+    "section": "4.6"
+  },
+  {
+    "front": "Advantages of imperative languages",
+    "back": "・library of pre-written functions \n・machine independent\n・easier to debug / understand",
+    "section": "4.6"
+  },
+  {
+    "front": "Disadvantages of imperative languages?",
+    "back": "・compiler might not be available for a specific processor\n・slower execution\n・uses more memory",
+    "section": "4.6"
+  },
+  {
+    "front": "What is a declarative language?",
+    "back": "・defines what is to be computed rather than how the computation is to be done\n→ eg. for creating websites",
+    "section": "4.6"
+  },
+  {
+    "front": "What are imperative & declarative languages?",
+    "back": "・solution expressed in terms of statements written using English-like keywords\n+ easier than assembly language to port to other types if computers",
+    "section": "4.6"
+  },
+  {
+    "front": "What are assemblers?",
+    "back": "translates assembly language to machine code",
+    "section": "4.6"
+  },
+  {
+    "front": "Advantage of assemblers",
+    "back": "・quick translation",
+    "section": "4.6"
+  },
+  {
+    "front": "Disadvantages of assemblers?",
+    "back": "・platform specific → different assemblers must exist for each type of processor instruction set",
+    "section": "4.6"
+  },
+  {
+    "front": "What are compilers?",
+    "back": "- produces object code from source code\n- translates whole source code at once\n- will not produce an executable file (will not compile) if error is encountered\n- compiled code only be executed on a machine with same instruction set\n- once compiled → object code (executable) can be executed without need of having compiler/source code",
+    "section": "4.6"
+  },
+  {
+    "front": "What is the processor instruction set?",
+    "back": "- set of commands a processor can execute\n- machine code instructions that tell the processor what operation to perform",
+    "section": "4.6"
+  },
+  {
+    "front": "Advantages of compilers",
+    "back": "・source code cannot be accessed by users\n・program can be executed more quickly\n・compiler optimises code\n・target computer does not need to have the original compiler \n→ no need for other software after translation",
+    "section": "4.6"
+  },
+  {
+    "front": "Disadvantages of compilers",
+    "back": "・platform specific\n・if there is an error in source code, it is not translated",
+    "section": "4.6"
+  },
+  {
+    "front": "What is an interpreter?",
+    "back": "- analyses source code line by line \n- run source code up to first error",
+    "section": "4.6"
+  },
+  {
+    "front": "Advantages of interpreters",
+    "back": "・interpreted code is more portable → can be used on devices with different processors",
+    "section": "4.6"
+  },
+  {
+    "front": "Disadvantages of interpreters",
+    "back": "- always need the interpreter to interpret source code → users need an interpreter\n- interpreted code will execute slower than executing code produced by compiler",
+    "section": "4.6"
+  },
+  {
+    "front": "Differences between compilers & interpreters",
+    "back": "・compiler produces object code, interpreter does not\n・executing object code produced by compilers is quicker than executing interpreted code \n・do not need compiler to execute compiled program, always need interpreter to interpret source code\n・compiler translates whole source code into object code, interpreter translates & executes line by line\n・compiled code executed only by machines with same instruction set, interpreted code ↑ portable",
+    "section": "4.6"
+  },
+  {
+    "front": "How does a HLL interpreter work?",
+    "back": "・analyses statements line by line of source code → calls routines to carry out each instruction",
+    "section": "4.6"
+  },
+  {
+    "front": "What is main memory made of?",
+    "back": "・RAM - random access memory\n・ROM - read only memory",
+    "section": "4.7"
+  },
+  {
+    "front": "What is main memory?",
+    "back": "Store for data & instructions that can be addressed by the processor",
+    "section": "4.7"
+  },
+  {
+    "front": "Why is main memory better than secondary storage?",
+    "back": "・faster → instructions executed quickly",
+    "section": "4.7"
+  },
+  {
+    "front": "What is a bus?",
+    "back": "A set of parallel wires used to connect different parts of the CPU to pass signals between them",
+    "section": "4.7"
+  },
+  {
+    "front": "What is the width of a bus?",
+    "back": "・no.parallel wires in a bus\n→ direct relationship to no.bits that can be transferred simultaneously by the bus",
+    "section": "4.7"
+  },
+  {
+    "front": "What does the address bus do?",
+    "back": "- carriers a memory address from the processor to another component\n・unidirectional",
+    "section": "4.7"
+  },
+  {
+    "front": "What does adding a single wire to the address bus do?",
+    "back": "・doubles no.addressable memory locations\n・n bit address bus → 2^n memory locations available",
+    "section": "4.7"
+  },
+  {
+    "front": "What does the data bus do?",
+    "back": "-carries data & instructions between the processor & another component \n- bi-directional",
+    "section": "4.7"
+  },
+  {
+    "front": "What does increasing the width of the data bus do?",
+    "back": "Increases volume of data that can be transferred over the bus at any time",
+    "section": "4.7"
+  },
+  {
+    "front": "What does the control bus do?",
+    "back": "- carries control signals between processor & other components \n- regulate the operation of the computer system\n- bi-directional",
+    "section": "4.7"
+  },
+  {
+    "front": "Examples of control signals",
+    "back": "- clock signal (timing signal)\n- memory write\n- memory read\n- interrupt\n- bus request\n- bus grant",
+    "section": "4.7"
+  },
+  {
+    "front": "What are I/O controllers?",
+    "back": "- allows processor to communicate with a peripheral via \nI/O port \n- allows peripheral to appear as set of registers\n- translates signals from peripheral into form that can be processed by computer \n- performs I/O related processing → reduce workload of processor\n- generates interrupt when I/O device needs attention of processor\n- buffers data from a peripheral",
+    "section": "4.7"
+  },
+  {
+    "front": "What is the structure of Harvard architecture?",
+    "back": "Instruction memory ↔️ processor ↔️ data memory\n\n- 2 separate memory stores",
+    "section": "4.7"
+  },
+  {
+    "front": "What is the structure of Von Neumann architecture?",
+    "back": "Memory ↔️ processor\n\n- 1 memory store for instructions & data",
+    "section": "4.7"
+  },
+  {
+    "front": "Examples of the use of Harvard architecture?",
+    "back": "・embedded devices (eg. digital signal processing)",
+    "section": "4.7"
+  },
+  {
+    "front": "Differences between Harvard & Von Neumann architecture?",
+    "back": "・Harvard uses separate memory space\n・Von Neumann uses combined memory space for instructions & data",
+    "section": "4.7"
+  },
+  {
+    "front": "Advantages of Harvard architecture over Von Neumann architecture",
+    "back": "・instructions & data can be accessed simultaneously \n• different technologies can be used to implement instruction & data memory \n• avoids possibility of data being executed as code\n・avoids delays waiting for memory fetches",
+    "section": "4.7"
+  },
+  {
+    "front": "When is Von Neumann architecture used?",
+    "back": "・general purpose computer systems → eg. laptops",
+    "section": "4.7"
+  },
+  {
+    "front": "What is the role of address bus, data bus & main memory in the fetch-execute cycle?",
+    "back": "・address in MAR sent down address bus to main memory\n・contents of address accessed in main memory\n・contents of address location is passed down the data bus into MBR",
+    "section": "4.7"
+  },
+  {
+    "front": "Why can PC ← [PC] +1 & MBR ← [Memory] addressed can occur at the same time?",
+    "back": "・order of execution is unimportant\n・steps carried out by different components",
+    "section": "4.7"
+  },
+  {
+    "front": "What happens in the fetch stage of the fetch-execute cycle?",
+    "back": "・contents of PC transferred to MAR\n・address bus used to transfer this address to main memory\n・fetched instruction is transferred using the data bus\n・contents of addressed memory location is loaded into the MBR\n・contents of the PC is incremented & fetched simultaneously \n・contents of MBR is copied to CIR",
+    "section": "4.7"
+  },
+  {
+    "front": "What happens in the decode stage of the fetch-execute cycle?",
+    "back": "・decode instruction held by CIR\n・control unit decodes instruction\n・instruction split into opcode & operand",
+    "section": "4.7"
+  },
+  {
+    "front": "What happens in the execute stage of the fetch-execute cycle?",
+    "back": "・if necessary, data is fetched or data is stored in memory\n・opcode identifies type of operation to be performed by the processor\n・the result may be stored in register\n・operation is performed by processor\n・status register updated\n・if brand required PC is updated",
+    "section": "4.7"
+  },
+  {
+    "front": "What does serially mean?",
+    "back": "Instructions are fetched & executed in order",
+    "section": "4.7"
+  },
+  {
+    "front": "What is fetching?",
+    "back": "retreiving an instruction from main memory",
+    "section": "4.7"
+  },
+  {
+    "front": "What is executing?",
+    "back": "Carrying out what is specified by the instruction",
+    "section": "4.7"
+  },
+  {
+    "front": "examples of dedicated registers",
+    "back": "・store specific information\n・PC (program counter)\n・CIR (current instruction register)\n・MAR (memory address register)\n・MBR (memory buffer register) / MDR (memory data register)\n・SR (status register)",
+    "section": "4.7"
+  },
+  {
+    "front": "What are the 5 stages of fetch-execute cycle?",
+    "back": "1)MAR ← [PC] \n\n2a) PC ← [PC] + 1 \n2b) MBR ← [Memory] addressed \n\n3)CIR ← [MBR] \n\n4)decode instruction \n\n5)execute instruction",
+    "section": "4.7"
+  },
+  {
+    "front": "What is an opcode?",
+    "back": "・value that specifies the operation to be performed",
+    "section": "4.7"
+  },
+  {
+    "front": "Why is the processed instruction stored in the CIR and not the MBR?",
+    "back": "・to execute the instruction other data may have to be fetched from main memory\n・further memory fetches would overwrite the contents of MBR",
+    "section": "4.7"
+  },
+  {
+    "front": "What is immediate addressing?",
+    "back": "The operand is the value to be used",
+    "section": "4.7"
+  },
+  {
+    "front": "What is direct addressing?",
+    "back": "The operand is a memory address/register of the value that is to be operated on",
+    "section": "4.7"
+  },
+  {
+    "front": "How many opcodes are possible with n bits allocated to the opcode?",
+    "back": "2^n",
+    "section": "4.7"
+  },
+  {
+    "front": "Factors that affect processor performance",
+    "back": "・multiple cores\n・types of cache memory\n・↑ clock speed\n・↑ word length\n・↑ bus width\n・↑ no.general purpose registers",
+    "section": "4.7"
+  },
+  {
+    "front": "How does adding more cores affect processor performance?",
+    "back": "・each core performs its own fetch-execute cycle independently\n・2/more independent processing units → tasks can be run in parallel\n・tasks split up to make use of extra cores → ↑ speed of execution\n→ eg. quad-core (4) / octa-core (8)",
+    "section": "4.7"
+  },
+  {
+    "front": "What does changing the type of cache memory affect processor performance?",
+    "back": "・some types of cache memory can be accessed faster\n・more cache = more info processor can store",
+    "section": "4.7"
+  },
+  {
+    "front": "What is cache?",
+    "back": "- small area of fast memory built into a modern processor\n- cache holds frequently used instructions & data that processor is likely to reuse",
+    "section": "4.7"
+  },
+  {
+    "front": "How does ↑ clock speed affect processor performance?",
+    "back": "・processor will execute more instructions per unit time → more cycles of fetch-execute cycle completed in the same amount of time \n→ errors can occur if speed is too high",
+    "section": "4.7"
+  },
+  {
+    "front": "How does ↑ word length affect processor performance?",
+    "back": "・word = group of bits treated as a single unit by the processor → represents instructions & data\n・processing can process more bits in one go \n・processor can handle more data per instruction\n・processor can access a larger amount of memory through direct addressing",
+    "section": "4.7"
+  },
+  {
+    "front": "How does ↑ address bus width affect processor performance?",
+    "back": "・↑ no.memory addresses → processor can access more main memory locations → ↑ max potential memory size",
+    "section": "4.7"
+  },
+  {
+    "front": "How does ↑ data bus width affect processor performance?",
+    "back": "・↑ no.bits that can be transferred at one time → processor can fetch more data from main memory → ↓no. cycles to fetch large volumes of data",
+    "section": "4.7"
+  },
+  {
+    "front": "How does ↑ no.general purpose registers affect processor performance?",
+    "back": "・more intermediate results can be kept in processor registers rather than main memory",
+    "section": "4.7"
+  },
+  {
+    "front": "Principles of operation of a laser printer",
+    "back": "・print drum coated in static charge\n・printer generates bitmap of image from the data received\n・laser beam shone at paint drum by rotating mirrors\n・by modulating the laser beam, static charge on drum reversed where image should be dark\n・toner given a static charge\n・print drum picks up toner as it passes\n・toner transferred from drum to paper\n・toner fused to paper by heated roller",
+    "section": "4.7"
+  },
+  {
+    "front": "Principles of operation of SSD (solid state drive)",
+    "back": "- data stored electronically in floating gate transistors\n- presence of trapped electrons or absence indicates 0/1\n- data organised into pages, with a whole page being read from/written to at a time\n- page must be erased before it can be overwritten\n- controller part of SSD manages organisation of data on flash memory chips\n- NAND flash memory often used",
+    "section": "4.7"
+  },
+  {
+    "front": "Advantages of SSD",
+    "back": "・lower power consumption  \n・faster read/write times & access speeds \n・no delay whilst disk spins up to speed \n・less heat generated – no need for fan \n・less vulnerable to damage from physical impact  \n・more robust",
+    "section": "4.7"
+  },
+  {
+    "front": "Advantages of hard disk",
+    "back": "・↓ cost per MB \n・↑ capacity drives available \n・have been used for a long time → ↑ confidence about storing data for long term",
+    "section": "4.7"
+  },
+  {
+    "front": "Principles of operation of RFID (radio frequency identification)",
+    "back": "- RFID reader emits radio waves\n- antenna in RFID tag allows radio waves to induce sufficient power in tag to enable tag\n- data stored in memory of tag\n- once enabled, tag emits radio waves to transmit data wirelessly to RFID reader\n- RFID reader converts radio wave back into binary data",
+    "section": "4.7"
+  },
+  {
+    "front": "Principles of operation of barcode reader",
+    "back": "・laser shone at barcode \n・user moves reader across barcode \n• light reflected back \n・black/white bands reflect different amount of light \n・light sensor measures amount of reflected light \n・light reflected converted into an electrical signal \n・electrical form of reflection analysed to determine value encoded in barcode\n\n- barcode often include check digit → validate accuracy of input",
+    "section": "4.7"
+  },
+  {
+    "front": "What is the purpose of a check digit?",
+    "back": "To validate data entry & verify if barcode has been inputted accurately",
+    "section": "4.7"
+  },
+  {
+    "front": "How is data written to & read from a CD-R disk?",
+    "back": "・write: a high frequency laser burns a pit  \n・read: a lower powdered laser is used to read data back → the difference reflective & non-reflective parts indicate 1s & 0s \n・data is stored as a continuous spiral track",
+    "section": "4.7"
+  },
+  {
+    "front": "Why might a CD-R not be accessible after time?",
+    "back": "・CD-R medium has become corrupted or damaged \n・no hardware exists to read CD-R disks",
+    "section": "4.7"
+  },
+  {
+    "front": "Principles of operation of hard disk drive",
+    "back": "- The disk is coated in a magnetisable material\n- The disk is divided into rings called tracks, and\nthe tracks are split into sectors\n- The read/write head moves in and out to a specific track\n- Data is read/written as correct sector passes under read/write head \n- The read/write head senses the magnetic field and converts it to 0s and 1s\n- The disk spins at a high speed\n- Disk and drive in sealed enclosure \n- Hard disk drive is a random-access device",
+    "section": "4.7"
+  },
+  {
+    "front": "How to ↑ storage capacity of a hard disk drive?",
+    "back": "・↑ platters that are packeted closer together \n・↑ tracks on a platter \n・greater density of data on each platter",
+    "section": "4.7"
+  },
+  {
+    "front": "Why software is bought on DVDs & not downloaded?",
+    "back": "・slow internet connection for large download \n・download can be interrupted → loss of download",
+    "section": "4.7"
+  },
+  {
+    "front": "Why storage capacity of DVD disk greater than CD?",
+    "back": "・recorded pit size smaller \n・ spiral spacing on DVD is closer",
+    "section": "4.7"
+  },
+  {
+    "front": "Advantage of digital camera",
+    "back": "No tags needed",
+    "section": "4.7"
+  },
+  {
+    "front": "Principles of operation of digital camera",
+    "back": "・light enters through lens & focused onto array of light sensors \n・each sensor generates electrical signal representing a pixel\n・ADC converts measurement of light intensity into binary data  \n・image captured when shutter pressed \n・colour filter used to generate data separately for red, green, blue colour components \n・image recorded as an array of pixels \n・image usual stored on SSD",
+    "section": "4.7"
+  },
+  {
+    "front": "Disadvantage of digital camera",
+    "back": "High data storage needed",
+    "section": "4.7"
+  },
+  {
+    "front": "Advantages of barcode reader",
+    "back": "・cheaper\n・smaller & lighter than RFID",
+    "section": "4.7"
+  },
+  {
+    "front": "Disadvantages of barcode reader",
+    "back": "・unreadable when damaged\n・difficult when being moved around",
+    "section": "4.7"
+  },
+  {
+    "front": "Advantages of RFID",
+    "back": "・read faster than other devices\n・no line-of-sight issues",
+    "section": "4.7"
+  },
+  {
+    "front": "Disadvantage of RFID",
+    "back": "Potential RFID dead spots",
+    "section": "4.7"
+  },
+  {
+    "front": "Why both magnetic hard disk & SSD used instead of only SSD?",
+    "back": "・hard disk drives are cheaper than SSD \n・hard disk drive have higher capacity than SSD",
+    "section": "4.7"
+  },
+  {
+    "front": "Hardware components of SSD",
+    "back": "・NAND flash memory / floating gate transistor\n・controller",
+    "section": "4.7"
+  },
+  {
+    "front": "Differences between primary & secondary storage",
+    "back": "・secondary is non-volatile, primary is volatile  \n・secondary is not directly accessible to processor, primary is directly accessible to processor \n・no limit on capacity of secondary storage, capacity of primary store limited by width of address bus",
+    "section": "4.7"
+  },
+  {
+    "front": "What are examples of optical disks?",
+    "back": "・CDs\n・DVDs\n・Blu-rays",
+    "section": "4.7"
+  },
+  {
+    "front": "What are the types of opticals disks?",
+    "back": "・read-only (ROM)\n・recordable (R)\n・rewritable (RW)",
+    "section": "4.7"
+  },
+  {
+    "front": "Principles of operation of read-only optical disks",
+    "back": "・pits are burnt into the disk by a high-power laser → permanently deforms surface\n・low-power laser beam passed over surface & reflects back onto photodiode\n・laser incident on it → light beam scattered not reflected back at photodiode → converted into digital signal of binary",
+    "section": "4.7"
+  },
+  {
+    "front": "How is data written to recordable & rewritable optical disks?",
+    "back": "・reflections created when there is no dye on the surface\n・scatters created when there is dye on the surface → laser beam absorbed by dye & not reflected",
+    "section": "4.7"
+  },
+  {
+    "front": "How do recordable optical disks work?",
+    "back": "・photosensitive dye used → changes from opaque to transparent under high-power laser & unaffected by low-power laser",
+    "section": "4.7"
+  },
+  {
+    "front": "How do rewritable optical disks work?",
+    "back": "・phase-change dye used → converts between transparent & opaque multiple times \n・dye changes state depending on temperature → data can be erased & rewritten multiple times",
+    "section": "4.7"
+  },
+  {
+    "front": "What is the typical capacity of\n・hard disk\n・solid-state drive\n・optical disk",
+    "back": "・high capacity → 500GB to 5TB\n・relatively low → <1TB\n・very low → <25GB",
+    "section": "4.7"
+  },
+  {
+    "front": "What is the read/write speeds of\n・hard-disk drive\n・solid-state drive\n・optical disk",
+    "back": "・good speeds → 100MB/s\n・very high speeds → 500MB/s\n・low speeds → 30MB/s",
+    "section": "4.7"
+  },
+  {
+    "front": "What is the latency of\n・hard disk drive\n・solid state drive\n・optical disk",
+    "back": "・high\n・very low\n・high",
+    "section": "4.7"
+  },
+  {
+    "front": "What is the portability of \n・hard-disk drive\n・solid state drive\n・optical disk",
+    "back": "・bulky, heavy, easily damaged by movement\n・lightweight, rarely damaged by movement\n・very small & lightweight but can be damaged by scratches",
+    "section": "4.7"
+  },
+  {
+    "front": "What is the power consumption of \n・hard disk drives\n・solid state drives\n・optical disks",
+    "back": "・high \n・low\n・high",
+    "section": "4.7"
+  },
+  {
+    "front": "What is each secondary storage device useful for?\n・hard disk drive\n・solid state drive\n・optical disk",
+    "back": "・desktop PCs & servers\n・laptops, phones, tablets\n・sharing & distributing small volumes of data",
+    "section": "4.7"
+  },
+  {
+    "front": "What is personal data?",
+    "back": "data which relates to a living individual who can identified from that data",
+    "section": "4.8"
+  },
+  {
+    "front": "What are measures to comply with the Data Protection Act?",
+    "back": "・password-protected files \n・backup data regularly  \n・firewall to guard against hackers \n・train staff to make them data-aware",
+    "section": "4.8"
+  },
+  {
+    "front": "What are ethical issues to consider?",
+    "back": "・need to have transparent policies to gain trust of users \n・what harmful purposes users might use the service for \n・what security measures should developers put in place – e.g. two-factor authentication \n・what data should be collected \n・what steps should the company take to ensure the system is not hacked/data not lost",
+    "section": "4.8"
+  },
+  {
+    "front": "What are legal issues to consider?",
+    "back": "・need to comply with legislation \n・consider different legal systems – if service is worldwide \n・data protection legislation would apply \n・copyright legislation may be breached if copyright material is uploaded",
+    "section": "4.8"
+  },
+  {
+    "front": "What are cultural issues to consider?",
+    "back": "・different values associated with privacy in different cultures  \n・risk putting developer’s values on to other cultures",
+    "section": "4.8"
+  },
+  {
+    "front": "What does ethical issues mean?",
+    "back": "Use & misuse of personal data",
+    "section": "4.8"
+  },
+  {
+    "front": "What are examples of ethical issues?",
+    "back": "・personal privacy – individuals may not have explicitly consented to data being collected & used  \n・data security – data stored online/on networks connected to the internet must be protected from unauthorised users \n・misuse of data – data collected for one purpose used for another – sold to other organisations \n・profiling – organisations create profiles by accumulating data of individuals – negative impact on individual",
+    "section": "4.8"
+  },
+  {
+    "front": "Examples of moral & social issues",
+    "back": "・unauthorised access – hackers gain access to systems – ethical hackers who claim that they help find weaknesses in system security \n・unauthorised use of software  \n・inappropriate behaviour – bullying, trolling & other forms of abuse \n・inappropriate content  \n・freedom of speech – internet allows everyone to say whatever they want \n・unemployment – retail & banking can employ less people \n・access to the internet – some do not and so are disadvantaged",
+    "section": "4.8"
+  },
+  {
+    "front": "What is a code of conduct?",
+    "back": "rules that an employee must follow, where breaking rules could result in losing their job",
+    "section": "4.8"
+  },
+  {
+    "front": "What is the Data Protection Act?",
+    "back": "・promoting good information handling practice \n・enforcing data protection\n・ freedom on information legislation\n・data must be: fairly & lawfully processed, accurate, not kept longer than necessary, secure, etc.",
+    "section": "4.8"
+  },
+  {
+    "front": "What is the Freedom of Information Act?",
+    "back": "・gives individuals access to personal & non-personal data held by public authorities\n・gives openness between public & government agencies",
+    "section": "4.8"
+  },
+  {
+    "front": "What is the Computer Misuse Act?",
+    "back": "・prevent hacking: unauthorised access to computer programs data, with criminal intent, or modification of computer material",
+    "section": "4.8"
+  },
+  {
+    "front": "What is the Regulation of Investigatory Powers (RIP) Act?",
+    "back": "clarify powers that government agencies have when investigating crime & employers can monitor activity of employees",
+    "section": "4.8"
+  },
+  {
+    "front": "What is the Copyright, Designs & Patents Act?",
+    "back": "・ rights to creators of certain materials of how the material is used  \n→ copyright – legal ownership that applies to software, music, films, etc.",
+    "section": "4.8"
+  },
+  {
+    "front": "Examples of cultural issues",
+    "back": "・overuse of data – dependant on data collected by every organisation – way that countries are run based on data analysis  \n・invasive tech – data collected without consent  \n・over-reliance – people at danger if computers fail \n・’Big Brother’ culture – use of CCTVs increasing  \n・Globalisation – connected to other countries – being influenced by them",
+    "section": "4.8"
+  },
+  {
+    "front": "What is serial data transmission?",
+    "back": "・single bits sent one after another along a single wire \n・uses a single wire - eg. metal wire, optical fibre, wireless channel",
+    "section": "4.9"
+  },
+  {
+    "front": "What is parallel data transmission?",
+    "back": "・multiple bits sent down several wires simultaneously \n・for short distances (eg.processor & RAM)",
+    "section": "4.9"
+  },
+  {
+    "front": "Why is serial transmission preferred over parallel?",
+    "back": "・parallel requires more wires → expensive & difficult to switch\n・parallel communication has a risk of skew & crosstalk→ more chance of error & limiting factor on transmission (problem worsens at higher speeds)",
+    "section": "4.9"
+  },
+  {
+    "front": "What is crosstalk?",
+    "back": "Wires tightly packed together → signal from one wire leaks into another → data corruption",
+    "section": "4.9"
+  },
+  {
+    "front": "What is asynchronous data transmission?",
+    "back": "・receiver & transmitter are not synchronised by a common clock\n・start bit = 1/0 & end bit = opposite",
+    "section": "4.9"
+  },
+  {
+    "front": "What is synchronous data transmission?",
+    "back": "Receiver & transmitter are continuously synchronised by a common clock → used within buses",
+    "section": "4.9"
+  },
+  {
+    "front": "What is a protocol?",
+    "back": "Set of rules which govern communication",
+    "section": "4.9"
+  },
+  {
+    "front": "What is the Baud rate?",
+    "back": "Number of signal changes which may occur in a given period of time (second)",
+    "section": "4.9"
+  },
+  {
+    "front": "How can bit rate be higher than Baud rate?",
+    "back": "More than one bit is encoded in each signal change",
+    "section": "4.9"
+  },
+  {
+    "front": "What is the relationship between bandwidth & bit rate?",
+    "back": "Greater bandwidth = greater bit rate \n- directly proportional",
+    "section": "4.9"
+  },
+  {
+    "front": "What is latency?",
+    "back": "Time delay between the moment an action is initiated & moment its effects is noticed\n- time delay between a signal being transmitted & being received",
+    "section": "4.9"
+  },
+  {
+    "front": "What is the bit rate?",
+    "back": "Number of bits that can be sent in one unit of time (second)",
+    "section": "4.9"
+  },
+  {
+    "front": "Why public hotspot is slower than home wireless networks?",
+    "back": "・connection to the internet has less bandwidth\n・more collisions",
+    "section": "4.9"
+  },
+  {
+    "front": "Why peripherals use serial transmission not parallel?",
+    "back": "・parallel communication only for short distances\n・avoids crosstalk\n・hardware for serial communication is cheaper to manufacture",
+    "section": "4.9"
+  },
+  {
+    "front": "Why may bus topology be segmented?",
+    "back": "・↓ no.collisions → 2 computers in 1 segment can communicate at the same time as 2 computers in another segment\n・improves security → by localising packet transmission to one segment",
+    "section": "4.9"
+  },
+  {
+    "front": "What is physical topology?",
+    "back": "- physical arrangement of connections between devices on the network",
+    "section": "4.9"
+  },
+  {
+    "front": "What is physical star network topology?",
+    "back": "- every device is directly connected to a central device (switch)\n- every device sends data via central device (switch)\n- device (switch) sends packets of data to only the intended recipient",
+    "section": "4.9"
+  },
+  {
+    "front": "What is physical bus topology?",
+    "back": "・connects clients to single cable (backbone) & terminator placed either end of backbone",
+    "section": "4.9"
+  },
+  {
+    "front": "What is logical bus network topology?",
+    "back": "- device broadcasts data to entire network\n- all devices on network receive data\n- device examines data to check if they are intended recipient \n- only one device can successfully transmit data at a time",
+    "section": "4.9"
+  },
+  {
+    "front": "What is logical star topology?",
+    "back": "Delivers packets only to recipients",
+    "section": "4.9"
+  },
+  {
+    "front": "How can a physical star network behave as a logical bus network",
+    "back": "Using a bus protocol & appropriate physical switching",
+    "section": "4.9"
+  },
+  {
+    "front": "What is a host?",
+    "back": "A device on a network that provides services \n(eg. file storage, internet access)",
+    "section": "4.9"
+  },
+  {
+    "front": "Advantages of bus topology",
+    "back": "・less expensive → less cabling required\n・no reliance on central node → data does not travel through one node",
+    "section": "4.9"
+  },
+  {
+    "front": "Advantages of star topology",
+    "back": "・improved security → data only travels down one link\n・improved reliability → if one link fails other are not affected\n・speed is not affected by no.connections → no links are shared",
+    "section": "4.9"
+  },
+  {
+    "front": "Where is client-server network more appropriate than peer-to-peer?",
+    "back": "・system stores confidential data to be kept secure\n・improved security management \n・centralised backup",
+    "section": "4.9"
+  },
+  {
+    "front": "Differences between client-server & peer-to-peer networking",
+    "back": "・resources stored on server - resources stored on each individual device\n・improved security management - management of security is difficult\n・clients access resources from server - any device can access resources from any other",
+    "section": "4.9"
+  },
+  {
+    "front": "What hardware component is needed for devices connecting to wireless networks?",
+    "back": "Wireless adapter",
+    "section": "4.9"
+  },
+  {
+    "front": "How can a MAC address whitelist prevent connection to networks?",
+    "back": "・MAC is unique to very NIC\n・wireless access point checks MAC address of device trying to connect against a list of allowed addresses \n・only devices with an allowed MAC address can connect",
+    "section": "4.9"
+  },
+  {
+    "front": "Why less devices on a wireless network improves peformance?",
+    "back": "・network has limited bandwidth → more bandwidth available for other devices\n・reduced likelihood of 2 devices transmitting simultaneously",
+    "section": "4.9"
+  },
+  {
+    "front": "What is the role of the SSID in wireless networking?",
+    "back": "・SSID is a locally unique identifier for a wireless network \n・prevents clients accessing wireless network unless they use the same SSID as the access point \n・broadcasting SSID publicly announces your wireless network – security weakness",
+    "section": "4.9"
+  },
+  {
+    "front": "How can disabling SSID broadcasting increase security of wireless network?",
+    "back": "・SSID of the network will not be visible when trying to connect to a network – only users who know the SSID of the network can try to connect",
+    "section": "4.9"
+  },
+  {
+    "front": "What does MAC address stand for?",
+    "back": "Media Access Control",
+    "section": "4.9"
+  },
+  {
+    "front": "What does SSID stand for?",
+    "back": "Service Set Identifier",
+    "section": "4.9"
+  },
+  {
+    "front": "Examples of security measures implemented by wireless access point",
+    "back": "・use of WPA/WPA2 \n・access points check MAC address of devices \n・disable broadcast of SSID",
+    "section": "4.9"
+  },
+  {
+    "front": "How is the CSMA/CA used?",
+    "back": "・computer listens for data signal \n・if signal is present then continue to wait \n・when no signal present start to transmit \n・wait to receive acknowledgement packet to confirm data received & not corrupted  \n・no acknowledgement packet received – wait a random time period & then transmit",
+    "section": "4.9"
+  },
+  {
+    "front": "How does CTS/RTS work?",
+    "back": "・before starting to transmit computer sends Request to Send to access point \n・access point will respond with Clear to Send signal to only one computer at a time \n・only the computer that receives the CTS signal will transmit",
+    "section": "4.9"
+  },
+  {
+    "front": "What does CSMA/CA stand for?",
+    "back": "Carrier Sense Multiple Access with Collision Avoidance",
+    "section": "4.9"
+  },
+  {
+    "front": "What does RTS/CTS stand for?",
+    "back": "Request to send/clear to send",
+    "section": "4.9"
+  },
+  {
+    "front": "How can a network be secured using WPA/WPA2",
+    "back": "・encrypt transmitted data using WPA/WPA2\n・requires new wireless client to enter a password to connect to network",
+    "section": "4.9"
+  },
+  {
+    "front": "What do wireless networks require?",
+    "back": "・wireless access point - connects to wired network like a client\n・wireless network adapter - in devices connecting to wireless network",
+    "section": "4.9"
+  },
+  {
+    "front": "Define software",
+    "back": "Name given to programs, code and instructions that are executed",
+    "section": "4.6"
+  },
+  {
+    "front": "Explain how a immediate language code is used after it has been generated",
+    "back": "-software must be used to finish translation process\n-JIT compiler compiles intermediate language code into machine code for processor it is being executed on\n-use a virtual machine - interprets intermediate language code \n-each processor instruction set will have its own virtual machine",
+    "section": "4.6"
+  },
+  {
+    "front": "Role of main memory in the execution of computer programs",
+    "back": "-main memory stores instruction to executed\n-main memory returns the data stored in a specified memory location\n-program is transferred from secondary storage into main memory when program execution is requested \n-main memory stores value resulting from the execution of the programs",
+    "section": "4.7"
+  },
+  {
+    "front": "Explain how a physical star topology can logically heave as a bus network",
+    "back": "-use a bus transmission protocol \n-use appropriate physical switching",
+    "section": "4.9"
+  },
+  {
+    "front": "Why might lossy compression be used?",
+    "back": "-large volume of data to store\n-file size reduced more - greater compression \n-still possible for files to retain sufficient quality",
+    "section": "4.5"
+  },
+  {
+    "front": "Ethical issues",
+    "back": "-may misuse data collected for own purposes\n-erosion of privacy \n-permission should be obtained - providing consent\n-potential distrust",
+    "section": "4.8"
+  },
+  {
+    "front": "Legal issues",
+    "back": "-comply with legislation (GDPR & Data Protection Act) - covering transmission & storage of data\n-ensure security & confidentiality \n-international - controls to abide to legislation of other countries",
+    "section": "4.8"
+  },
+  {
+    "front": "Cultural issues",
+    "back": "-benefits are shred between languages \n-consider customs & norms of other countries - expectations of privacy\n-greater benefit to specific groups - eg.physical disabilities",
+    "section": "4.8"
+  },
+  {
+    "front": "Operation of a physical star network",
+    "back": "-every device is directly connected to a central hub\n-every device sends data via central hub",
+    "section": "4.9"
+  },
+  {
+    "front": "How does a client-server network operate",
+    "back": "-client requests services from server\n-server responds to client requests\n-resources stored on server",
+    "section": "4.9"
+  },
+  {
+    "front": "Difference between physical & logical topology",
+    "back": "-physical - physical architecture of the wiring between devices on network\n-logical - how data flows around a network",
+    "section": "4.9"
+  },
+  {
+    "front": "How is a file compressed using RLE",
+    "back": "-image analysed to identify sequences of same value\n-values & counts of pixels are represented in lists",
+    "section": "4.5"
+  },
+  {
+    "front": "Role of operating system",
+    "back": "-resource management \n-hides complexities if hardware from users",
+    "section": "4.6"
+  },
+  {
+    "front": "Resources that operating system manages",
+    "back": "-processors\n-memory",
+    "section": "4.6"
+  },
+  {
+    "front": "difference between system software and application software",
+    "back": "-system software manages operation of computer system\n-application software carry’s out tasks that are user-oriented",
+    "section": "4.6"
+  },
+  {
+    "front": "Role of address, data & control bus to writing data to memory",
+    "back": "-address if memory to be written to placed in address bus\n-data to be written placed on data bus\n-signal to write is placed on control bus\n-control bus carries a clock signal to synchronise memory & processor",
+    "section": "4.7"
+  },
+  {
+    "front": "Why use SSD & hard disk",
+    "back": "-magnetic hard disk useful when large capacity needed \n-SSD has faster access speeds",
+    "section": "4.7"
+  },
+  {
+    "front": "Why it is faster to access data from SSD than optical disk",
+    "back": "-No movable parts - no need for read/write head to move to correct position\n-purely electronic - minimal latency",
+    "section": "4.7"
+  },
+  {
+    "front": "When is peer-to-peer suitable",
+    "back": "-does not need a central server\n-cheaper\nNo need for extra security",
+    "section": "4.9"
+  },
+  {
+    "front": "Define bandwidth",
+    "back": "Range of frequencies that can be transmitted across a network connection",
+    "section": "4.9"
+  },
+  {
+    "front": "CSMA/CA & RTS/CTS",
+    "back": "-transmitting device checks for traffic\n-data signal present - transmitter waits random amount of time before checking traffic again\n-channel is idle - transmitter send a RTS\n-receiver/WAP responds with CTS signal\n-CTS not received - wait random amount mount of time before restarting transmission process\n-CTS signal received - transmitter begins transmitting data \n-receiver send acknowledgement- not received -data resent",
+    "section": "4.9"
+  },
+  {
+    "front": "Advantages of serial transmission",
+    "back": "-cheaper - needs fewer wires\n-doesn’t suffer from crosstalk - one transmission line\n-no skew - one bit transmitted at a time",
+    "section": "4.9"
+  },
+  {
+    "front": "how it is possible for the bit rate of a communications channel to be higher\nthan its baud rate",
+    "back": "- more than one but is encoded in each signal change",
+    "section": "4.9"
+  },
+  {
+    "front": "operation of a logical bus network topology",
+    "back": "-a node broadcasts data to entire network\n-all nodes receive data\n-nodes examine data to check if it is the intended recipient",
+    "section": "4.9"
+  },
+  {
+    "front": "Data compression used dictionary-based methods",
+    "back": "-variable length strings of symbols of original data are represented by single tokens \n-a dictionary is formed using the tokens as keys \n-strings of symbols are used as entries",
+    "section": "4.5"
+  },
+  {
+    "front": "Advantages of SSD to magnetic hard disk",
+    "back": "-lower power drain\n-less likely to be damaged \n-faster access time - more data  stored per second\n-lighter",
+    "section": "4.7"
+  },
+  {
+    "front": "why, under the correct conditions, the Vernam cipher is perfectly secure",
+    "back": "Frequency analysis cannot provide clues to plaintext",
+    "section": "4.5"
+  },
+  {
+    "front": "Steps of fetch & explanation",
+    "back": "-contents of PC transferred to MAR - so PC can be updated\n-contents of MAR placed onto address bus - correct location in main memory accessed\n-contents of addressed memory location loaded into MBR - not all fetches for instructions - cannot be loaded directly into CIR\n-contents of PC incremented - neck instruction ion in sequence fetched\n-contents of MBR copied to CIR - control unit uses instruction from CIR",
+    "section": "4.7"
+  },
+  {
+    "front": "Why data bus is bidirectional",
+    "back": "-data & instructions fetched & transferred from memory to processor using data bus\n-result may need to be transferred back to memory using data bus",
+    "section": "4.7"
+  },
+  {
+    "front": "Nyquist’s theorem",
+    "back": "-sampling rate must be at least doubled highest frequency in original sound",
+    "section": "4.5"
+  },
+  {
+    "front": "Role of WPA2 in wireless networking",
+    "back": "-strong encryption used to secure wireless networks\n-lowers chance that unauthorised devices will be able to interpret data transmitted",
+    "section": "4.9"
+  },
+  {
+    "front": "Principles of operation of digital camera",
+    "back": "-light focused by lens onto sensor chips\n-each sensor chip produces an electrical signal\n-signal represents a pixel\n-ADC converts measurement of light intensity into binary data\n-colour filter applied to generate data separately for red,green and blue colour components \n-pixels recorded as an array",
+    "section": "4.7"
+  },
+  {
+    "front": "Role of status register & when its contents is updated",
+    "back": "-provides info about the result of the last instruction\n-overflow/interrupt occurs",
+    "section": "4.7"
+  },
+  {
+    "front": "What are libraries & why programmers use them",
+    "back": "-provide routines that can be used in a program\n-speeds up development of programs",
+    "section": "4.6"
+  },
+  {
+    "front": "What is sample resolution",
+    "back": "Number of bits used to represent each sample",
+    "section": "4.5"
+  },
+  {
+    "front": "Advantage of parity bit over majority voting",
+    "back": "-data transmitted more quickly \n-height cost if transmitting multiple copies\n-efficient to transmit corrupted data than multiple copies",
+    "section": "4.5"
+  },
+  {
+    "front": "Advantages of MIDI",
+    "back": "-more compact representation \n-no data lost about musical notes\n-easy to modify notes",
+    "section": "4.5"
+  },
+  {
+    "front": "Advantages of HLLs",
+    "back": "-written in a form easier for humans to interpret\n-easier to debug\n-wider range of programming structures\n-programs quicker to write",
+    "section": "4.6"
+  },
+  {
+    "front": "Disadvantages of HLLs",
+    "back": "-need to be translated - not all LLLs do\n-use more memory when executing\n-slower execution \n-cannot directly interact with hardware",
+    "section": "4.6"
+  },
+  {
+    "front": "How does a compiler that uses an intermediate language work",
+    "back": "-translate HLLs into intermediate language \n-use a virtual machine to execute the byte code on different processors\n-each different processor instruction set will have its own virtual machine",
+    "section": "4.6"
+  },
+  {
+    "front": "What does imperative HLL mean",
+    "back": "-instructions executed in programmer-defined order\n-HLL instructions use English like keywords",
+    "section": "4.6"
+  },
+  {
+    "front": "Why do rounding errors occur?",
+    "back": "Some decimal numbers cannot be represented exactly in binary → eg. 0.1 = 0.000110011..",
+    "section": "4.5"
+  },
+  {
+    "front": "How to calculate absolute errors?",
+    "back": "Difference between given value & actual value",
+    "section": "4.5"
+  },
+  {
+    "front": "How to calculate relative errors?",
+    "back": "Absolute error / actual value",
+    "section": "4.5"
+  },
+  {
+    "front": "What is the advantage of floating point numbers vs fixed point numbers & why?",
+    "back": "Greater range of number with given no.bits → uses positive/negative exponent",
+    "section": "4.5"
+  },
+  {
+    "front": "What does having a large exponent & small mantissa in a floating point number cause?",
+    "back": "-larger range\n-little precision",
+    "section": "4.5"
+  },
+  {
+    "front": "What does placing the binary point closer to the left cause for a floating point number?",
+    "back": "-greater precision \n-smaller range",
+    "section": "4.5"
+  },
+  {
+    "front": "Difference between thin-client & thick-client network",
+    "back": "-thin client network - processing carried out on an application server\n-thick client network - significant amount of the processing is carried out on the client",
+    "section": "4.9"
+  },
+  {
+    "front": "Define Wi-Fi",
+    "back": "-A wireless networking technology that allows devices to interface with the Internet & communicate with one another within a particular area",
+    "section": "4.9"
+  },
+  {
+    "front": "What standards is Wi-Fi based on & what do they do?",
+    "back": "-based on IEEE 802.11 standards\n-define the protocols required to enable communication between Wi-Fi enables devices",
+    "section": "4.9"
+  },
+  {
+    "front": "Define wireless network adapter",
+    "back": "-the hardware equipment that allows a device to connect to a wireless access point",
+    "section": "4.9"
+  },
+  {
+    "front": "What does a wireless access point do?",
+    "back": "-allows wireless devices to connect to the wireless network",
+    "section": "4.9"
+  },
+  {
+    "front": "What is Wi-Fi security?",
+    "back": "-measures to protect wireless networks & devices from unauthorised access, data interception & other threats \n-uses encryption & authentication to secure data transmission",
+    "section": "4.9"
+  },
+  {
+    "front": "Examples of common WiFi security protocols",
+    "back": "-Wired Equivalent Privacy (WEP)\n-WiFi Protected Access (WPA, WPA2, WPA3)",
+    "section": "4.9"
+  },
+  {
+    "front": "Define Internet",
+    "back": "-an international network of networks",
+    "section": "4.9"
+  },
+  {
+    "front": "What is packet switching?",
+    "back": "-when a file (data) is sent across the internet it is broken into packets\n-packets are moved around the internet using packet switching\n-different packets from the same file may take different routes to reach same destination\n-destination reassembles file (data)",
+    "section": "4.9"
+  },
+  {
+    "front": "What is a router?",
+    "back": "-device that receives packets from one host (computer) \n-uses destination IP address that they contain to pass them, correctly formatted, to another host (computer) or router \n-router uses most efficient path to destination",
+    "section": "4.9"
+  },
+  {
+    "front": "What is a packet?",
+    "back": "-a unit of data carried by a packet-switching network containing both control & user data",
+    "section": "4.9"
+  },
+  {
+    "front": "What does a packet typically contain?",
+    "back": "-destination address\n-sender address\n-payload (data)\n-checksum\n-port numbers \n-sequence number\n-time to live (TTL)\n-packet length/size\n-padding, type of service (priority)",
+    "section": "4.9"
+  },
+  {
+    "front": "What is a gateway?",
+    "back": "-device used to connect networks using different protocols - info can be successfully passed from one system to another",
+    "section": "4.9"
+  },
+  {
+    "front": "Define Uniform Resource Locator (URL)",
+    "back": "-the unique address of a resource on the internet",
+    "section": "4.9"
+  },
+  {
+    "front": "Define domain name",
+    "back": "-a unique string that services provided by the internet - eg. websites, email servers",
+    "section": "4.9"
+  },
+  {
+    "front": "How are domain names organised?",
+    "back": "-organised in a hierarchical manner \n-top-level domain - eg. .com, .org, .uk, .fr",
+    "section": "4.9"
+  },
+  {
+    "front": "What is a Fully Qualified Domain Name (FQDN)?",
+    "back": "-identifies a host as well as a network",
+    "section": "4.9"
+  },
+  {
+    "front": "Example of a domain name & FQDN",
+    "back": "Domain name: aqa.org.uk\nFQDN: onlineservies.aqa.org.uk",
+    "section": "4.9"
+  },
+  {
+    "front": "What is an IP address?",
+    "back": "-given to a device when it connects to a network",
+    "section": "4.9"
+  },
+  {
+    "front": "What are the two formats of IP address?",
+    "back": "-IPv4\n-IPv6",
+    "section": "4.9"
+  },
+  {
+    "front": "What is IPv4?",
+    "back": "-consists of 4 bytes of info & typically represented as a dotted quad - each having a value between 0 & 255\n-eg. 10.10.100.4",
+    "section": "4.9"
+  },
+  {
+    "front": "What is IPv6?",
+    "back": "-consists of 16 bytes of info & typically represented as 8 sets of 4 hex digits separated by colons \n-eg. 2001:0DB8:4545:0003:0200:F8FF:FE21:67CF",
+    "section": "4.9"
+  },
+  {
+    "front": "What is the purpose of a domain name system (DNS)?",
+    "back": "-to look up a fully qualified domain name & return the corresponding IP address",
+    "section": "4.9"
+  },
+  {
+    "front": "What are internet registries?",
+    "back": "-allow users/companies to register domain names \n-ensures domain names are unique \n-once a domain name is registered it can be mapped to an IP address & places into the DNS system",
+    "section": "4.9"
+  },
+  {
+    "front": "What is a firewall?",
+    "back": "-software or hardware that inspects traffic & decides whether to allow it to pass \n-rules are written & checked against when traffic arrives",
+    "section": "4.9"
+  },
+  {
+    "front": "What traffic can a firewall block?",
+    "back": "-on various ports\n-with specific source IP addresses\n-with specific destination IP addresses \n-with specific protocols",
+    "section": "4.9"
+  },
+  {
+    "front": "How can firewalls perform stateful inspection?",
+    "back": "-where info about current connection (sessions) is held & packets relevant to this connection are allowed through",
+    "section": "4.9"
+  },
+  {
+    "front": "Where does a firewall usually sit?",
+    "back": "-between a Local Area Network (LAN) or a individual computer & the internet",
+    "section": "4.9"
+  },
+  {
+    "front": "What is packet filtering?",
+    "back": "-uses a set of rules to match against the header of a packet to determine whether the packet should be accepted or denied",
+    "section": "4.9"
+  },
+  {
+    "front": "What can packet filtering check against?",
+    "back": "-IP addresses\n-ports\n-protocols\n-MAC addresses",
+    "section": "4.9"
+  },
+  {
+    "front": "What is a proxy servers?",
+    "back": "-keeps a cache of transmitted data (usually webpages) & return these to a device rather than requesting them over the network\n-provides anonymity to a client - sits between client & server being accessed \n-can examine entire files - carry out additional checks that a firewall cannot complete (firewall only examines data at a packet level)",
+    "section": "4.9"
+  },
+  {
+    "front": "What does stateful inspection do?",
+    "back": "-requires a firewall to maintain details of all active connections - more dynamic filtering than just packet filtering - firewall can analyse the connection for suspicious activity",
+    "section": "4.9"
+  },
+  {
+    "front": "What is symmetric encryption?",
+    "back": "-same key used to encrypt & decrypt data",
+    "section": "4.9"
+  },
+  {
+    "front": "What is the key exchange problem?",
+    "back": "-how to pass the key from the sender to receiver without it being intercepted",
+    "section": "4.9"
+  },
+  {
+    "front": "What is asymmetric encryption?",
+    "back": "-different but related keys are used for encryption & decryption of data",
+    "section": "4.9"
+  },
+  {
+    "front": "What is a digital signature?",
+    "back": "-way of authenticating the sender of a message",
+    "section": "4.9"
+  },
+  {
+    "front": "How is a digital signature created?",
+    "back": "-original message is hashed - create message digest\n-message digest is encrypted with sender’s private key - generates digital signature",
+    "section": "4.9"
+  },
+  {
+    "front": "How can a receiver check the authenticity of the message using the sender’s digital signature?",
+    "back": "-hash the message received - creates message digest\n-decrypt digital signature using sender’s public key - get original message digest \n-compare two message digests - same then sender authenticated & message not been changed",
+    "section": "4.9"
+  },
+  {
+    "front": "What is a digital certificate?",
+    "back": "-authenticates the identity of the sender of a message\n-issued by a certificate authority & digitally signed by them - certificate verified",
+    "section": "4.9"
+  },
+  {
+    "front": "What is a worm?",
+    "back": "-small program that hides in or masquerades as a desirable software (eg. game/utility) but attacks computer it infects",
+    "section": "4.9"
+  },
+  {
+    "front": "What is a virus?",
+    "back": "-small program attached to another program or data file\n-replicates itself by attaching itself to other programs when executed",
+    "section": "4.9"
+  },
+  {
+    "front": "What is the Transport Control Protocol/Internet Protocol (TCP/IP) model?",
+    "back": "-a protocol stack used when connected a device to the internet \n-made up of four layers: Application, Transport, Network, Link",
+    "section": "4.9"
+  },
+  {
+    "front": "What does the Application layer do?",
+    "back": "-controls how data moves in & out of applications from the transport layer \n-applications include: email clients, web browsers & protocols like HTTP, HTTPS & Internet Message Access Protocol (IMAP)",
+    "section": "4.9"
+  },
+  {
+    "front": "What does the transport layer do?",
+    "back": "-breaks down messages into smaller chunks\n-sets up the communication between two hosts & hosts agree settings (eg. size of packets)\n-establishes end-to-end connection between sender & receiver\n-each packet is given a sequence number - receiver can put message back together\n-allocates ports to applications & passes data to the relevant application using the port number",
+    "section": "4.9"
+  },
+  {
+    "front": "How does the transport layer deal with transmission errors?",
+    "back": "-checksum\n-acknowledgement\n-retransmission",
+    "section": "4.9"
+  },
+  {
+    "front": "What protocols does the transport layer use?",
+    "back": "-TCP\n-User Datagram Protocol (UDP)",
+    "section": "4.9"
+  },
+  {
+    "front": "What does the network layer do?",
+    "back": "-adds the source & destination IP addresses to the packet\n-layer is concerned with the routing of packets across the Internet \n-adds ‘time to live’ counter to packet \n-uses a subnet mask to identify if destination is on the same subnet as sender",
+    "section": "4.9"
+  },
+  {
+    "front": "What does the link layer do?",
+    "back": "-includes the network interface card & drivers necessary to send data out onto network\n-adds the hardware MAC address of the sender & destination (next hop)",
+    "section": "4.9"
+  },
+  {
+    "front": "What is a socket address?",
+    "back": "-the combination of an IP address & port",
+    "section": "4.9"
+  },
+  {
+    "front": "What does a port do?",
+    "back": "-associated with a specific process or service - eg. emails to go to email client & web pages to go to browser application with both on the same device (IP address)\n-ports are identified by numbers - eg. port 80 used for HTTP traffic to web server",
+    "section": "4.9"
+  },
+  {
+    "front": "What is a MAC address?",
+    "back": "-a 48-bit (12-character hexadecimal) \n-MAC address is unique to every network interface card\n-accept & deny lists can be used on a network hardware - increase security",
+    "section": "4.9"
+  },
+  {
+    "front": "Who & why uses well-known ports?",
+    "back": "-used by servers\n-numbers are well-known - do not need to be looked up by a client initiating a request",
+    "section": "4.9"
+  },
+  {
+    "front": "How are client port allocated & what is another name for client ports?",
+    "back": "-allocated from a bank of available ports on the client device\n-aka ephemeral ports",
+    "section": "4.9"
+  },
+  {
+    "front": "What is FTP?",
+    "back": "-File Transfer Protocol\n-an application layer protocol to allow transfer of files between a client & server",
+    "section": "4.9"
+  },
+  {
+    "front": "What is HTTP/HTTPS?",
+    "back": "-HyperText Transfer Protocol (Secure)\n-application layer protocol for communication web pages",
+    "section": "4.9"
+  },
+  {
+    "front": "What is the difference between HTTPS & HTTP?",
+    "back": "-HTTPS is a secure version of HTTP - encrypts data being transmitted",
+    "section": "4.9"
+  },
+  {
+    "front": "What is POP3?",
+    "back": "-application layer protocol allowing clients to retrieve emails from an email server\n-clients connects to the POP3 server & typically downloads all new emails & simultaneously deletes them from server",
+    "section": "4.9"
+  },
+  {
+    "front": "What is SMTP?",
+    "back": "-application layer protocol used to send/receive emails to & from another email server/client",
+    "section": "4.9"
+  },
+  {
+    "front": "What is SSH?",
+    "back": "-application layer protocol allowing clients to execute commands on a server\n-provides secure connection for remote management of a device",
+    "section": "4.9"
+  },
+  {
+    "front": "Why is a subnet mask used?",
+    "back": "-device can quickly determine whether data is to be transmitted to another device that is on the same network or on a different network",
+    "section": "4.9"
+  },
+  {
+    "front": "What are the IP standards of IPv4 & IPv6?",
+    "back": "-4 byte address\n-16 byte address",
+    "section": "4.9"
+  },
+  {
+    "front": "What is a routable IP address?",
+    "back": "-IP addresses that are publicly routable on Internet \n-must be globally unique",
+    "section": "4.9"
+  },
+  {
+    "front": "What IP addresses would a school have?",
+    "back": "-may have only one (external) public IP address but many (internal) private IP addresses",
+    "section": "4.9"
+  },
+  {
+    "front": "How to find two’s complement of a number?",
+    "back": "- invert bits \n- add 1 to least significant bit",
+    "section": "4.5"
+  },
+  {
+    "front": "What is fixed point binary?",
+    "back": "- allow representation of fractional numbers by having a fixed number of bits before and after the binary point \n- can represent some numbers more precisely than floating point system",
+    "section": "4.5"
+  },
+  {
+    "front": "What is floating point binary?",
+    "back": "- allow representation of fractional numbers by having a mantissa & exponent\n- mantissa x 2^exponent\n- can represent numbers with a greater range than fixed point in a given number of bits",
+    "section": "4.5"
+  },
+  {
+    "front": "What is a rounding error?",
+    "back": "- when a number cannot be stored exactly in binary due to insufficient bits \n- number either rounded/truncated",
+    "section": "4.5"
+  },
+  {
+    "front": "What is absolute error?",
+    "back": "- difference between actual number to be represented & nearest representable number available \n- always positive",
+    "section": "4.5"
+  },
+  {
+    "front": "What is relative error?",
+    "back": "- absolute error / actual number",
+    "section": "4.5"
+  },
+  {
+    "front": "How can range of a floating point number be increased?",
+    "back": "- more bits to exponent",
+    "section": "4.5"
+  },
+  {
+    "front": "How can precision of a floating point number be increased?",
+    "back": "- more bits associated to mantissa",
+    "section": "4.5"
+  },
+  {
+    "front": "What is normalisation of a floating point number?",
+    "back": "- if mantissa starts with 01 / 10\n- normalised has:\n→ 1 unique representation for each number\n→ highest precision for that particular system in the given number of bits",
+    "section": "4.5"
+  },
+  {
+    "front": "What is an underflow?",
+    "back": "- result of a calculation is too small to be represented using the available number of bits → represented as 0",
+    "section": "4.5"
+  },
+  {
+    "front": "What is overflow?",
+    "back": "- result of calculation too large to be represented using available number of bits",
+    "section": "4.5"
+  },
+  {
+    "front": "What is a character set?",
+    "back": "- collection of characters (letter, numbers, symbols) that a computer system can process & use to represent text, with each character assigned unique numerical code",
+    "section": "4.5"
+  },
+  {
+    "front": "What does ASCII stand for?",
+    "back": "- American Standard Code for Information Interchange",
+    "section": "4.5"
+  },
+  {
+    "front": "Define metadata",
+    "back": "- data about data → additional data with an image file alongside pixel colour code data",
+    "section": "4.5"
+  },
+  {
+    "front": "What is sample resolution?",
+    "back": "- measure of how many bits are used to represent each sample",
+    "section": "4.5"
+  },
+  {
+    "front": "What is RLE?",
+    "back": "- run-length encoding \n- lossless method of data compression\n- sequences of identical data values are replaced with a single data value & the count of its repetitions",
+    "section": "4.5"
+  },
+  {
+    "front": "What is dictionary-based compression?",
+    "back": "- lossless method of data compression\n- variable length strings of original data are represented by single tokens \n- a table (dictionary) is formed using the tokens as the keys & strings as entries",
+    "section": "4.5"
+  },
+  {
+    "front": "Advantage & disadvantage of dictionary-based compression",
+    "back": "+ reduces size significantly\n- dictionary ↑ file size",
+    "section": "4.5"
+  },
+  {
+    "front": "What is perfect security?",
+    "back": "When an attacker cannot learnt anything about a message by looking at the ciphertext",
+    "section": "4.5"
+  },
+  {
+    "front": "What is intermediate language (bytecode)?",
+    "back": "- code between HHL & machine code",
+    "section": "4.6"
+  },
+  {
+    "front": "When is using an intermediate language useful?",
+    "back": "- target platform may not be known\n- code needs to be run on multiple platforms",
+    "section": "4.6"
+  },
+  {
+    "front": "How can source code be can on any processor using intermediate language?",
+    "back": "- source code converted to intermediate language (byte code) by compiler\n- virtual machine (environment) on intended device translates byte code to machine code of intended device & execute it",
+    "section": "4.6"
+  },
+  {
+    "front": "What is source code?",
+    "back": "- program written in a language → e.g. high-level language",
+    "section": "4.6"
+  },
+  {
+    "front": "What is object code",
+    "back": "- source code translated into machine executable code (or intermediate code)",
+    "section": "4.6"
+  },
+  {
+    "front": "What is a half adder?",
+    "back": "- half-adder circuit adds two single-bit values \n- result has a carry & sum",
+    "section": "4.6"
+  },
+  {
+    "front": "What is a full adder?",
+    "back": "- full-adder circuit adds two single-bit values alongside a carry-in\n- result has a carry-out & sum",
+    "section": "4.6"
+  },
+  {
+    "front": "What is a D-type flip-flop used for?",
+    "back": "- store state of data input\n- delay change of state of its output signal until next rising edge of clock timing input signal occurs \n- used as a memory unit \n- inputs: data signal & clock signal",
+    "section": "4.6"
+  },
+  {
+    "front": "What is a processor?",
+    "back": "- fetched, decode, executes instructions \n- manages all other components of computer \n- AKA central processing unit (CPU)",
+    "section": "4.7"
+  },
+  {
+    "front": "What is addressable memory?",
+    "back": "- each memory location has a unique address which identifies it \n- maximum size of addressable memory limited by word size of computer",
+    "section": "4.7"
+  },
+  {
+    "front": "What is the stored program concept?",
+    "back": "- machine code instructions stored in main memory are fetched & executed serially by a processor that performs arithmetic & logical operations \n- programs can be moved in & out of main memory",
+    "section": "4.7"
+  },
+  {
+    "front": "What is the arithmetic logic unit?",
+    "back": "- part of processor where arithmetic & logical operations are performed",
+    "section": "4.7"
+  },
+  {
+    "front": "What is the control unit?",
+    "back": "Part of the processor that:\n- decodes instructions \n- coordinates/directs the execution of instructions\n- sends control signals to other components",
+    "section": "4.7"
+  },
+  {
+    "front": "What does the clock do?",
+    "back": "- synchronises operations of the computer of sending regular timing signals",
+    "section": "4.7"
+  },
+  {
+    "front": "What is a register?",
+    "back": "- memory location on a processor that can be accessed quickly \n- register can hold data used when executing an instruction & result of executing an instruction",
+    "section": "4.7"
+  },
+  {
+    "front": "What is a general purpose register?",
+    "back": "- register used for temporarily holding data \n- programmer can choose what each general-purpose register is used for",
+    "section": "4.7"
+  },
+  {
+    "front": "What is a dedicated register?",
+    "back": "- register that has a specific purpose within the processor",
+    "section": "4.7"
+  },
+  {
+    "front": "What is a program counter?",
+    "back": "- register that holds the address of the next instruction to be fetched",
+    "section": "4.7"
+  },
+  {
+    "front": "What is a memory address register?",
+    "back": "- register that holds the address of the instruction/data item to be fetched",
+    "section": "4.7"
+  },
+  {
+    "front": "What is a memory buffer register?",
+    "back": "- register that holds the instruction/data item fetched from memory",
+    "section": "4.7"
+  },
+  {
+    "front": "What is a current instruction register?",
+    "back": "- register that holds the copy of the current instruction to be decoded & executed",
+    "section": "4.7"
+  },
+  {
+    "front": "What is a status register?",
+    "back": "- series of ‘flags’ used to indicate the state of the processor \n- provides information about the result of the last instruction",
+    "section": "4.7"
+  },
+  {
+    "front": "Example of flags shown by status register",
+    "back": "- when result of comparison is zero\n- when carry occurred\n- when overflow/underflow occurs\n- when division by zero occurs\n- when interrupt occurs",
+    "section": "4.7"
+  },
+  {
+    "front": "Define fetch-execute cycle",
+    "back": "- cycle that a processor follows to process instructions\n- split into fetch, decode, execute stages",
+    "section": "4.7"
+  },
+  {
+    "front": "What is an operand?",
+    "back": "- value/data that will be used by an operation",
+    "section": "4.7"
+  },
+  {
+    "front": "What is the role of an interrupt?",
+    "back": "- request for the processor to suspend a currently executing process \n- so that a device/source that needs immediate attention of processor can be serviced",
+    "section": "4.7"
+  },
+  {
+    "front": "What is interrupt service routine?",
+    "back": "- special block of code associated with specific kind of interrupt\n- called to deal with an interrupt when it occurs",
+    "section": "4.7"
+  },
+  {
+    "front": "Why must a volatile environment (contents of registers) be saved before an interrupt can be serviced?",
+    "back": "- currently running process/program can be returned to\n- as the code that deals with the interrupt will change register values",
+    "section": "4.7"
+  },
+  {
+    "front": "What is an interrupt?",
+    "back": "- signal/request sent to the processor from a hardware device/program",
+    "section": "4.7"
+  },
+  {
+    "front": "Principles of operation of optical drive",
+    "back": "Read:\n- low power laser beam shone at disk\n- light focused at spot onto disk & some light reflected back\n- amount of light reflected measured by light sensor\n- disk spins at constant linear velocity \n- data stored as spiral on disk\n- continuation of land/pit reflects light, transition between land & pit scatters light\n- continuation = 0, transition = 1",
+    "section": "4.7"
+  },
+  {
+    "front": "What is a start bit?",
+    "back": "- low voltage signal (0) marking beginning of a data frame\n- will start the receiver clock & bring into phase the receiver clock with the transmitter clock",
+    "section": "4.9"
+  },
+  {
+    "front": "What is a stop bit?",
+    "back": "- used to signal the end of the data frame\n- allows next start bit to be recognised & provides time for receiver to process received data",
+    "section": "4.9"
+  },
+  {
+    "front": "What is logical topology?",
+    "back": "- how data/packets flow around a network",
+    "section": "4.9"
+  },
+  {
+    "front": "What is bandwidth?",
+    "back": "- range of frequencies that can be transmitted across a transmission medium",
+    "section": "4.9"
+  },
+  {
+    "front": "Define non-routable IP address",
+    "back": "- IP addresses non publicly routable on the internet\n- AKA private IP addresses\n- used inside LANs \n- do not have to be globally unique but must be locally unique",
+    "section": "4.9"
+  },
+  {
+    "front": "How can a firewall protect computers on a LAN",
+    "back": "- block/allow traffic on specific ports\n- block/allow traffic from specific IP addresses\n- block/allow certain types of packet\n- stateful inspection - maintains info about current connections & only allows packets relevant to these connections through\n- acts as a proxy server \n- identifies unusual behaviour from a host",
+    "section": "4.9"
+  },
+  {
+    "front": "Purpose of DNS system",
+    "back": "- maps Fully Qualified Domain Names (FQDNs) into IP addresses",
+    "section": "4.9"
+  },
+  {
+    "front": "How does a DNS system work?",
+    "back": "- DNS stores a database of FQDNs & corresponding IP addresses\n- DNS is a distributed database of mappings\n- DNS servers organised into a hierarchy\n- if one DNS server cannot resolve a lookup → query passed onto another DNS server",
+    "section": "4.9"
+  },
+  {
+    "front": "Examples of fields included in a packet",
+    "back": "- destination/source address \n- payload (data)\n- checksum\n- port number\n- sequence number\n- time to live\n- packet length/size",
+    "section": "4.9"
+  },
+  {
+    "front": "Role of router in packet switching",
+    "back": "- connects 2 networks together\n- determines which outgoing link to send packet along \n- uses most efficient path to destination\n- monitors network & updates routes to reflect congestion\n- modifies MAC addresses for next hop",
+    "section": "4.9"
+  },
+  {
+    "front": "What are Uniform Resource Locators used for in RESTful application?",
+    "back": "- each resource is represented by a URL\n- entering a URL causes server to use CRUD to retrieve the relevant data \n- URLs sent between client & server using HTTP",
+    "section": "4.9"
+  },
+  {
+    "front": "What is the additional functionality of a gateway beyond that of a router?",
+    "back": "- protocol conversion",
+    "section": "4.9"
+  },
+  {
+    "front": "Measures to reduce the threat posed by viruses, worms, trojans",
+    "back": "- monitoring \n- protection \n- code quality",
+    "section": "4.9"
+  },
+  {
+    "front": "Examples of monitoring for internet security",
+    "back": "- firewall\n- proxy server\n- spam filters\n- web filters\n- digital certificate\n- digital signature",
+    "section": "4.9"
+  },
+  {
+    "front": "How can spam filters be used for internet security",
+    "back": "- block emails from suspicious sources / containing suspicious content\n- block pop ups → prevent users clicking on potentially harmful links",
+    "section": "4.9"
+  },
+  {
+    "front": "How can web filters be used as internet security",
+    "back": "- check websites against list of websites known for having content that might contain/spread a virus",
+    "section": "4.9"
+  },
+  {
+    "front": "How can digital certificates/signatures be used as internet security?",
+    "back": "- used to verify source of downloaded file\n- verify that file has not been changed/came from known source",
+    "section": "4.9"
+  },
+  {
+    "front": "Example of protection for internet security",
+    "back": "- enable automatic update of applications\n- use virtual machine to execute programs \n- set access rights → lower risk of virus accessing important data\n- encrypt files → data cannot be extracted from them\n- backup data & keep offline → can be recovered\n- use MAC address allow list → only known devices can join network\n- strong passwords/biometric access → harder for hacker to access computer & install virus",
+    "section": "4.9"
+  },
+  {
+    "front": "Examples of how code quality be used as internet security?",
+    "back": "- ensure code does not allow buffer overflow \n- test software for security issues \n- carry out code review → code is independently checked by another programmer\n- use code analysis software → identify flaws \n- only use internet services from internet if required",
+    "section": "4.9"
+  },
+  {
+    "front": "How are domain names organised ?",
+    "back": "- hierarchical organisation\n\n→ top level domain: com, org, uk\n→ second level domain: ac.uk",
+    "section": "4.9"
+  },
+  {
+    "front": "What service is provided by internet registries & why are they needed?",
+    "back": "- register domains to people/organisations\n\n- to enter domain names to IP address mapping into DNS system\n- ensure domain names are unique\n- ensure domain names not used by more than 1 person",
+    "section": "4.9"
+  },
+  {
+    "front": "How does the transport layer of TCP/IP determine which application layer software on the server should deal with a received request?",
+    "back": "- use the port number to determine which server/software should deal with the request",
+    "section": "4.9"
+  },
+  {
+    "front": "How can computer A send an encrypted message to B using asymmetric encryption?",
+    "back": "- message digest value calculated from message contents\n- message digest value encrypted using A’s private key\n- encrypted message digest known as digital signature \n- digital signature appended to message\n- message & signature encrypted using B’s public key",
+    "section": "4.9"
+  },
+  {
+    "front": "How can computer B decrypt A’s message & verify that it was sent by A?",
+    "back": "- B’s private key used to decrypt message & signature \n- message rehashed / new message digest calculated from message\n- A’s public key used to decrypt digital signature → to produce received message digest\n- if received message digest & recalculated message digest match → sender can be authenticated",
+    "section": "4.9"
+  },
+  {
+    "front": "Functions of the network layer of TCP/IP stack",
+    "back": "- adds source/destination IP addresses \n- selects next host to transmit packet to (routing)\n- creates checksum for packet header\n- encapsulates data datagrams",
+    "section": "4.9"
+  },
+  {
+    "front": "Why is JSON better than XML?",
+    "back": "- more compact\n- quicker to parse \n- structure understood directly in some language \n- easier for human to read/write/understand",
+    "section": "4.9"
+  },
+  {
+    "front": "Advantage of using DHCP system",
+    "back": "- reduces need for expert knowledge when configuring host \n- reduces time required to configure hosts\n- facilitates efficient use of limited pool of IP addresses\n- avoids errors → duplicating IP addresses/programming incorrect subnet mask",
+    "section": "4.9"
+  },
+  {
+    "front": "How can 2 computers connected to internet have same IP address & communicate with each other?",
+    "back": "- computers have private IP addresses\n- NAT performed → computers can communicate on internet \n→ as data passes onto internet → private IP address replaced with public IP address of router/gateway",
+    "section": "4.9"
+  },
+  {
+    "front": "How can a computer A use a subnet mask to determine if another computer B is on LAN?",
+    "back": "- AND operation of subnet mask with computer A’s IP address\n- AND operation of subnet mask B’s IP address \n- result is subnet ID\n- compare subnet IDs\n- if different → packet must be sent via router/gateway (not on same subnet)\n- if same → packet sent directly to B",
+    "section": "4.9"
+  },
+  {
+    "front": "How will a packet on computer A be routed across the internet to computer B in a different countries?",
+    "back": "- hierarchical organisation of routers → packet passed up to national router, transferred internationally & passed back down hierarchy \n- path to take selected by each router \n- route may change due to congestion\n- route determined using network ID part of destination IP address \n- router tables used to determine next hop\n- router decrements time to live of packet\n- source & destination MAC addresses changed at each router \n- NAT occur at routers",
+    "section": "4.9"
+  },
+  {
+    "front": "How can a checksum be used to determine if received packet has been changed during transmission over the internet?",
+    "back": "- checksum produced when packet transmitted\n- checksum calculated from packet contents\n- MOD operation used to limit magnitude of checksum\n- checksum transmitted with packet\n- computer B recalculated checksum\n- received & calculated checksum compared \n- match = packet content accurate\n- different = data been changed",
+    "section": "4.9"
+  },
+  {
+    "front": "Why might a thin-client system chosen over thick-client system?",
+    "back": "- clients cheaper to purchase → lower hardware specification\n- less configuration of clients necessary \n- simpler installation/update of software → only done on server\n- more secure → fewer settings can be changed",
+    "section": "4.9"
+  },
+  {
+    "front": "Why IPv6 introduced to replace IPv4?",
+    "back": "- not enough unique addresses in IPv4 \n- eliminate need for NAT\n- simplified routing\n- automatic configuration possible without DHCP\n- allows bigger packet sizes",
+    "section": "4.9"
+  },
+  {
+    "front": "Hardware requirements thin-client compared to thick-client computing systems",
+    "back": "Network:\n- higher bandwidth network connection required \n\nclient:\n- slower clock speed processor needed\n- reduced RAM needed\n- no secondary storage required in workstations\n\nserver \n- multiple processors needed\n- lot of RAM needed\n- many secondary storage drives needed",
+    "section": "4.9"
+  },
+  {
+    "front": "What is the role of the transport layer of the TCP/IP stack in the transmission of an email from a computer to email server?",
+    "back": "- establishes end-to-end connection between email servers\n- performs error detection & correction\n- uses the port number to pass the data on to the email server application software in application layer when it is received \n- split data up into segments & adds header info\n- perform flow control\n- manage congestion",
+    "section": "4.9"
+  },
+  {
+    "front": "Why are well-known port used?",
+    "back": "- communications is initiated by the sender/client → port number must be the same for all initial communications",
+    "section": "4.9"
+  },
+  {
+    "front": "What is the role of the application layer of the TCP/IP stack in a file server to transmit a file onto a network?",
+    "back": "- file server software will operate in application layer\n- file transfer may use FTP protocol",
+    "section": "4.9"
+  },
+  {
+    "front": "What is the role of the transport layer of the TCP/IP stack in a file server to transmit a file onto a network?",
+    "back": "- establishes end-to-end connection between file server & computer\n- receives file on a port from the application layer \n- splits file into segements\n- adds checksum to segment\n- performs flow control\n- performs congestion control\n- adds sequence number to segment",
+    "section": "4.9"
+  },
+  {
+    "front": "What is the role of the network layer of the TCP/IP stack in a file server to transmit a file onto the network?",
+    "back": "- adds source & destination IP addresses to datagram\n- encapsulates each TCP/IP segment into a IP datagram\n- adds time to live\n- uses subnet mask to determine if destination is on same subnet",
+    "section": "4.9"
+  },
+  {
+    "front": "What is the role of the link layer of the TCP/IP stack in a file server to transmit a file onto a network?",
+    "back": "- physical interface to network communications mediums \n- uses device drivers \n- adds MAC address of destination",
+    "section": "4.9"
+  },
+  {
+    "front": "How can a computer outside a LAN access a web server which is identified by a non-routable IP address?",
+    "back": "- computers outside LAN will use public IP address of the router to access the web server\n- router will perform port forwarding\n- router maintains port mapping table\n- router must identify traffic arriving on the HTTP port \n- relevant traffic must be forwarded by the router to the IP address of the web server",
+    "section": "4.9"
+  },
+  {
+    "front": "Why is it not desirable to allow the network settings of a web server to be configured by a DHCP server?",
+    "back": "- IP address of web server might be changed by DHCP server\n- if IP address of web server changes → router cannot forward data to it (port forwarding will not work)",
+    "section": "4.9"
+  },
+  {
+    "front": "How is NAT used to allow a computer to download a file from an FTP server on the Internet using the File Transfer Protocol (FTP)?\n\n(Handling ongoing request)",
+    "back": "Request sent:\n- router receives FTP request from computer → it replaces IP address of computer with public IP address of router\n- router replaces source port number with port number it generates \n- router adds mapping created to NAT translation table",
+    "section": "4.9"
+  },
+  {
+    "front": "How is NAT used to allow a computer to download a file from an FTP server on the Internet using the File Transfer Protocol (FTP)?\n\n(Returning data)",
+    "back": "Reply received \n- reply received from FTP server → destination port number looked up in NAT translation table\n- router replaces its IP address with computer’s IP address\n- reply forwarded to computer that made the original request",
+    "section": "4.9"
+  },
+  {
+    "front": "Why would the replacement of IPv4 with IPv6 mean NAT is no longer necessary?",
+    "back": "- enough IPv6 addresses for every device in the world to have its own unique IP address",
+    "section": "4.9"
+  },
+  {
+    "front": "What does DHCP stand for",
+    "back": "Dynamic host configuration protocol",
+    "section": "4.9"
+  },
+  {
+    "front": "What is DHCP for?",
+    "back": "- to automate the configuration of hosts when connecting to a network\n- allocate IP addresses, gateway & subnet mask to hosts",
+    "section": "4.9"
+  },
+  {
+    "front": "What are the 4 step of DHCP?",
+    "back": "D - discover\nO - offer\nR - response\nA - acknowledge",
+    "section": "4.9"
+  },
+  {
+    "front": "What does Discover stage of DHCP do?",
+    "back": "- the host sends a discovery request to the network o discover a DHCP server",
+    "section": "4.9"
+  },
+  {
+    "front": "What does the Offer stage of DHCP do?",
+    "back": "- DHCP server offers configuration to the host",
+    "section": "4.9"
+  },
+  {
+    "front": "What does the Response stage of DHCP do?",
+    "back": "- host accepts the offer of configuration",
+    "section": "4.9"
+  },
+  {
+    "front": "What does the Acknowledge stage of the DHCP do?",
+    "back": "- DHCP server confirms acceptance",
+    "section": "4.9"
+  },
+  {
+    "front": "What does NAT stand for",
+    "back": "Network address translation",
+    "section": "4.9"
+  },
+  {
+    "front": "What does NAT allow?",
+    "back": "- allows many devices with private IP addresses inside a LAN to access the internet via 1 public IP address",
+    "section": "4.9"
+  },
+  {
+    "front": "What is port forwarding?",
+    "back": "- external request arrives at public IP address of gateway\n- rule set up for all requests on a certain port (e.g port 80) to be forwarded to an internal private IP address (e.g web server)",
+    "section": "4.9"
+  },
+  {
+    "front": "When is port forwarding used?",
+    "back": "When an external device to the LAN tries to access a private IP address → gateway/router can be set up to perform port forwarding",
+    "section": "4.9"
+  },
+  {
+    "front": "What is a client server model?",
+    "back": "- resources provided by a server & requests made by clients\n- client sends request to server\n- server processes this request & sends a response to the client",
+    "section": "4.9"
+  },
+  {
+    "front": "What is a peer-to-peer model?",
+    "back": "- resources shared across peers & each peer has a similar status",
+    "section": "4.9"
+  },
+  {
+    "front": "Why is DHCP used?",
+    "back": "- assigns IP addresses to devices as they join a network\n→ less wasted IP addresses if the device leaves network & does not join again",
+    "section": "4.9"
+  },
+  {
+    "front": "What is an API?",
+    "back": "- application programming interface \n- set of protocols relating to how different applications communicate with each other \n- how interaction between applications should be carried out → applications can make use of other applications",
+    "section": "4.9"
+  },
+  {
+    "front": "What is the Websocket protocol?",
+    "back": "Protocol establishing a full-duplex communication channel over a single TCP channel",
+    "section": "4.9"
+  },
+  {
+    "front": "Why is the Websocket protocol used?",
+    "back": "- persistent connection between the client & server → allows both parties to send data at any time",
+    "section": "4.9"
+  },
+  {
+    "front": "What does full duplex mean?",
+    "back": "Data can be transmitted & received simultaneously in both directions",
+    "section": "4.9"
+  },
+  {
+    "front": "Where is the Websocket protocol used?",
+    "back": "- video streaming, online games, instant messaging \n\n→ lower size of packet headers → fast transmission of data",
+    "section": "4.9"
+  },
+  {
+    "front": "What does REST API stand for?",
+    "back": "Representational State Transfer Application Programming Interface",
+    "section": "4.9"
+  },
+  {
+    "front": "What happens in a RESTful application?",
+    "back": "- URLs can be used to access resources from a server/application",
+    "section": "4.9"
+  },
+  {
+    "front": "What does CRUD stand for & what do these operations allow?",
+    "back": "- create, retrieve, update, delete\n\n- building applications that interact with databases (query online databases)",
+    "section": "4.9"
+  },
+  {
+    "front": "What is the relationship between CRUD & SQL?",
+    "back": "- create → INSERT INTO\n- retrieve → SELECT\n- update → UPDATE\n- delete → DELETE",
+    "section": "4.9"
+  },
+  {
+    "front": "What is the relationship between CRUD & REST API?",
+    "back": "- create → POST\n- retrieve → GET\n- update → PUT\n- delete → DELETE",
+    "section": "4.9"
+  },
+  {
+    "front": "What 4 HTTP request methods does REST use to query databases?",
+    "back": "- POST\n- GET\n- PUT\n- DELETE",
+    "section": "4.9"
+  },
+  {
+    "front": "Relationship between REST HTTP request methods & SQL",
+    "back": "- POST → INSERT\n- GET → SELECT\n- PUT → UPDATE\n- DELETE → DELETE",
+    "section": "4.9"
+  },
+  {
+    "front": "Steps for a client to connect to a database",
+    "back": "- client-server request made by client to web browser\n- web browser responds with requested web page (delivered as text file)\n- text file contains JavaScript → loads API → API uses REST → enable database server to be queried by client with the use of HTTP request methods\n- client sends HTTP requests to database server\n- database server responds to client’s request using JSON/XML\n- client’s browser processes JSON/XML & displays response to user",
+    "section": "4.9"
+  },
+  {
+    "front": "How is a database connected to a browser?",
+    "back": "- using REST which relies on HTTP request methods",
+    "section": "4.9"
+  },
+  {
+    "front": "What does REST allow JavaScript to do?",
+    "back": "- REST allows JavaScript to talk to server through HTTP",
+    "section": "4.9"
+  },
+  {
+    "front": "What is JSON or XML used for?",
+    "back": "- to transmit data between a server & web application",
+    "section": "4.9"
+  },
+  {
+    "front": "Advantage of XML over JSON?",
+    "back": "- more flexible",
+    "section": "4.9"
+  },
+  {
+    "front": "What does JSON stand for",
+    "back": "JavaScript Object Notation",
+    "section": "4.9"
+  },
+  {
+    "front": "What is JSON?",
+    "back": "- file format for storing & transmitting structured data \n- used with web applications",
+    "section": "4.9"
+  },
+  {
+    "front": "What does XML stand for",
+    "back": "eXtensible markup language",
+    "section": "4.9"
+  },
+  {
+    "front": "What is XML",
+    "back": "- file format for storing & transmitting structured data",
+    "section": "4.9"
+  },
+  {
+    "front": "What is a thin-client network",
+    "back": "- majority of network’s processing power belongs to servers → provide services & resources (storage & processing)",
+    "section": "4.9"
+  },
+  {
+    "front": "What is a thick-client network",
+    "back": "- clients powerful enough to provide their own processing power & storage → no need for server but could still have a server",
+    "section": "4.9"
+  },
+  {
+    "front": "What is an entity relationship diagram?",
+    "back": "Diagram to represent the kind of relationship between 2 entities (tables) in a database\n\n- 1 to 1 \n- 1 to many \n- many to 1",
+    "section": "4.10"
+  },
+  {
+    "front": "What is a relational database?",
+    "back": "- collection of tables which can be linked together by the means of primary & foreign keys",
+    "section": "4.10"
+  },
+  {
+    "front": "Define attribute",
+    "back": "A property or characteristic of an entity (databases)",
+    "section": "4.10"
+  },
+  {
+    "front": "Define primary key",
+    "back": "A field that is unique for every record in a table\n- AKA entity identifier in abstract database modelling",
+    "section": "4.10"
+  },
+  {
+    "front": "Define foreign key",
+    "back": "- a field in a table that it also a primary key in another table",
+    "section": "4.10"
+  },
+  {
+    "front": "Define composite primary key",
+    "back": "- a primary key made up of 2 or more fields",
+    "section": "4.10"
+  },
+  {
+    "front": "What is normalisation of a database?",
+    "back": "- designing the structure of a database so it has desirable properties:  \n→ minimising data redundancy \n→ ensuring data integrity",
+    "section": "4.10"
+  },
+  {
+    "front": "Why are databases normalised?",
+    "back": "- improve data consistency \n- eliminate insertion anomalies \n- eliminate deletion anomalies \n- be in third normal form (3NF)",
+    "section": "4.10"
+  },
+  {
+    "front": "What is third normal form (3NF)",
+    "back": "Every field depends upon the key, the whole key & nothing but the key",
+    "section": "4.10"
+  },
+  {
+    "front": "What is SQL",
+    "back": "- programming language for storing & processing information in a relational database",
+    "section": "4.10"
+  },
+  {
+    "front": "What does the SELECT query do in SQL",
+    "back": "To retrieve data from a relational data base",
+    "section": "4.10"
+  },
+  {
+    "front": "What is the command structure of SELECT query in SQL",
+    "back": "SELECT field1, field2,\nFROM table1, table 2,\nWHERE criteria \nORDER BY field1 ASC/DESC",
+    "section": "4.10"
+  },
+  {
+    "front": "What does the SQL UPDATE query do",
+    "back": "To edit or update the contents of a record in a relational database",
+    "section": "4.10"
+  },
+  {
+    "front": "What is the command structure of SQL UPDATE",
+    "back": "UPDATE table SET field1=value1, field2 = value2 . WHERE criteria",
+    "section": "4.10"
+  },
+  {
+    "front": "What does SQL INSERT do",
+    "back": "- to insert data into a relational database",
+    "section": "4.10"
+  },
+  {
+    "front": "What is the command structure of SQL INSERT",
+    "back": "INSERT INTO table (field1, field2) \nVALUES (value1, value2)\n\n→ list of fieldnames can be omitted if query adds all of fields that are present in a table in the same order that they are defined",
+    "section": "4.10"
+  },
+  {
+    "front": "What does SQL DELETE do",
+    "back": "Delete data from a relational database",
+    "section": "4.10"
+  },
+  {
+    "front": "What is the command structure of SQL DELETE",
+    "back": "DELETE FROM table WHERE criteria",
+    "section": "4.10"
+  },
+  {
+    "front": "What is the command structure for SQL define a table",
+    "back": "CREATE TABLE name \n(Fieldname1 datatype1, fieldname2 datatype2, …, PRIMARY KEY(filename) )",
+    "section": "4.10"
+  },
+  {
+    "front": "What is a client server database?",
+    "back": "- database stored on the server\n- clients send request to server\n- server process request\n- response sent to client\n\n- provides simultaneous access to the database for multiple clients",
+    "section": "4.10"
+  },
+  {
+    "front": "Advantages of client server databases",
+    "back": "- only 1 copy of the data exists (on server)\n- server can control access to the data (security)\n- administration & maintenance of database easier",
+    "section": "4.10"
+  },
+  {
+    "front": "What is concurrent access",
+    "back": "- when a database allows multiple users to access the database at the same time",
+    "section": "4.10"
+  },
+  {
+    "front": "What is the missing update problem",
+    "back": "- two users read & edit a record at the same time \n- 1 user writes the data back to the database\n- then other user writes data back to database\n- first user update now lost",
+    "section": "4.10"
+  },
+  {
+    "front": "Ways to manage the missing update problem",
+    "back": "- record locks \n- serialisation\n- timestamp ordering\n- commitment ordering",
+    "section": "4.10"
+  },
+  {
+    "front": "What are record locks",
+    "back": "- when a user starts to edit a record → exclusive lock set on record → other users cannot edit this record while lock is in place",
+    "section": "4.10"
+  },
+  {
+    "front": "What is serialisation of databases?",
+    "back": "- concept that when concurrent access to database is allowed → any transactions completed concurrently should have the same effect as if they were completed serially (one after the other)",
+    "section": "4.10"
+  },
+  {
+    "front": "What is timestamp ordering",
+    "back": "- timestamps generated for each transaction\n- database records timestamps of last read/write of records\n- rules applied to determine if processing a transaction will result in loss of data integrity\n\n→ e.g. transaction should be aborted if the last write timestamp of a record is greater than when this transaction started",
+    "section": "4.10"
+  },
+  {
+    "front": "What is commitment ordering",
+    "back": "- looks to optimise the order in which transactions are completed\n- considers order of transactions with dependencies → ensure any conflicts are resolved",
+    "section": "4.10"
+  },
+  {
+    "front": "What is Big Data?",
+    "back": "Data sets that are typically too large to be processed by traditional data-processing methods",
+    "section": "4.11"
+  },
+  {
+    "front": "What can Big Data be described in terms of",
+    "back": "- volume \n- velocity\n- variety",
+    "section": "4.11"
+  },
+  {
+    "front": "What is volume in terms of Big Data",
+    "back": "High volume of data to be processed → might not fit in one server",
+    "section": "4.11"
+  },
+  {
+    "front": "What is velocity in terms of Big Data",
+    "back": "Data is generated/received/must be processed very quickly \n\n→ streaming data → milliseconds to seconds to respond",
+    "section": "4.11"
+  },
+  {
+    "front": "What is variety in terms of Big Data",
+    "back": "Data contains a variety of different forms of information → e.g. structured, unstructured text, multimedia",
+    "section": "4.11"
+  },
+  {
+    "front": "Why is the lack of structure of Big Data a problem",
+    "back": "- analysing the data is made significantly more difficult\n- relational databases are not appropriate → they require data to fit into a row-&-column format",
+    "section": "4.11"
+  },
+  {
+    "front": "What is distributed processing in Big Data",
+    "back": "- breaking down a large/complex task into smaller parts & distributing them across multiple connected devices to be processed simultaneously",
+    "section": "4.11"
+  },
+  {
+    "front": "How is machine learning used with Big Data",
+    "back": "- to discern patterns in the data & to extract useful information",
+    "section": "4.11"
+  },
+  {
+    "front": "Examples of data that are continuously streamed",
+    "back": "- networked sensors\n- smartphones\n- video surveillance \n- mouse clicks",
+    "section": "4.11"
+  },
+  {
+    "front": "What features of functional programming make it suitable for working with big data",
+    "back": "- immutable data structures → values stored cannot be changed after being created\n\n- functions are stateless → they do not have side effects\n\n- higher-order functions can compose the results of processing on multiple processors \n\n- order of execution can be determined at runtime",
+    "section": "4.11"
+  },
+  {
+    "front": "What must happen when data sizes are too big to fit on to a single server",
+    "back": "- processing must be distributed across more than 1 machine\n- functional programming used → easier to write correct & efficient distributed code",
+    "section": "4.11"
+  },
+  {
+    "front": "What does each fact within a fact-based model capture?",
+    "back": "Captures a single piece of information",
+    "section": "4.11"
+  },
+  {
+    "front": "What is a graph schema",
+    "back": "Shows the structures of data being stored using a fact-based model",
+    "section": "4.11"
+  },
+  {
+    "front": "What does a node in a graph schema show",
+    "back": "- core entity → oval",
+    "section": "4.11"
+  },
+  {
+    "front": "What does an edge in a graph schema show",
+    "back": "Relationship between nodes → line",
+    "section": "4.11"
+  },
+  {
+    "front": "What does a property in a graph schema show",
+    "back": "- value for an entity → rectangular box",
+    "section": "4.11"
+  },
+  {
+    "front": "How can the challenges of Big Data be overcome using programming?",
+    "back": "- functional programming\n- machine learning → identify patterns in data",
+    "section": "4.11"
+  },
+  {
+    "front": "How can the challenges of Big Data be overcome using hardware?",
+    "back": "- distributed database systems \n- use many thousand commodity servers\n- use servers with multiple CPUs",
+    "section": "4.11"
+  },
+  {
+    "front": "What is a function?",
+    "back": "- maps the value from set X to one element of set Y\n\n→ set X = domain of function\n→ set Y = co-domain of function",
+    "section": "4.12"
+  },
+  {
+    "front": "With the function f: A → B\n what is the function type, argument type, result type?",
+    "back": "- A → B\n- A\n- B",
+    "section": "4.12"
+  },
+  {
+    "front": "What is a domain?",
+    "back": "A set from which the function’s input values are chosen",
+    "section": "4.12"
+  },
+  {
+    "front": "What is a co-domain?",
+    "back": "A set which the function’s output values are chosen → not all co-domain’s members need to be outputs",
+    "section": "4.12"
+  },
+  {
+    "front": "What is a first-class object?",
+    "back": "Can be:\n- passed as an argument\n- returned from a function\n- assigned to a variable\n-appear in expressions",
+    "section": "4.12"
+  },
+  {
+    "front": "Examples of first-class objects",
+    "back": "- integers\n- floating-point values\n- characters\n- strings",
+    "section": "4.12"
+  },
+  {
+    "front": "What is function application?",
+    "back": "- evaluation of a function applied to an input value x to gain an output value y",
+    "section": "4.12"
+  },
+  {
+    "front": "What is partial function application?",
+    "back": "- function applied to one of its arguments\n- output of this function application is a new function (partially applied function)\n- function is then applied to the next argument",
+    "section": "4.12"
+  },
+  {
+    "front": "What is the composition of functions?",
+    "back": "- where the result of 1 function application is passed as an argument to the next\n\n- (g o f) x  =  g ( f (x) )",
+    "section": "4.12"
+  },
+  {
+    "front": "What is a higher-order function?",
+    "back": "- function that takes a function as an argument &/ a function that returns a function as a result",
+    "section": "4.12"
+  },
+  {
+    "front": "Examples of higher order functions",
+    "back": "- map\n- filter\n- fold",
+    "section": "4.12"
+  },
+  {
+    "front": "What does map do? (higher-order function)",
+    "back": "- allows a function to be evaluated across every element in a list\n\n- map fn list = [ fn(x1), fn(x2), … , fn(xn) ]",
+    "section": "4.12"
+  },
+  {
+    "front": "What does filter do? (Higher order function)",
+    "back": "- allows a function with a Boolean result to be evaluated across every element in a list → keeps the elements where the function evaluates True\n\nfilter fn list = [ x | fn(x) = True and x belongs to list ]",
+    "section": "4.12"
+  },
+  {
+    "front": "What does fold (reduce) do? (Higher order function)",
+    "back": "- uses a combining function → work through list of combing elements to produce a final result\n\nfold fn start_value list  fn ( fn (fn (s_v x1) x2) x3)\nif the list was [x1, x2, x3]",
+    "section": "4.12"
+  },
+  {
+    "front": "How to return the head of a list in functional programming?",
+    "back": "head",
+    "section": "4.12"
+  },
+  {
+    "front": "How to return the tail of a list in functional programming?",
+    "back": "tail",
+    "section": "4.12"
+  },
+  {
+    "front": "How to test for an empty list in functional programming?",
+    "back": "isEmpty [] = True\nisEmpty (x:xs) = False",
+    "section": "4.12"
+  },
+  {
+    "front": "How to return the length of a list in functional programming?",
+    "back": "length [] = 0\nlength (x:xs) = 1 + length xs",
+    "section": "4.12"
+  },
+  {
+    "front": "How to construct an empty list in functional programming?",
+    "back": "emptyList = []",
+    "section": "4.12"
+  },
+  {
+    "front": "How to prepend an item to a list in functional programming?",
+    "back": "newList = 1 : [2,3]",
+    "section": "4.12"
+  },
+  {
+    "front": "How to append an item to a list in functional programming?",
+    "back": "newList = [1,2] ++ [3]",
+    "section": "4.12"
+  }
+]
