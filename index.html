@@ -3,23 +3,39 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AQA A Level Computer Science Flashcards</title>
+<title>Diya's AQA A Level Computer Science Flashcards</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
-  <h1>AQA A Level Computer Science Flashcards</h1>
+  <img src="images/logo.png" alt="Logo" class="logo">
+  <h1>Diya's AQA A Level Computer Science Flashcards</h1>
 </header>
 
-<main id="app">
+<div class="controls-bar">
+  <label>
+    Unit
+    <select id="select-unit">
+      <option value="unit1">Unit 1</option>
+      <option value="unit2">Unit 2</option>
+    </select>
+  </label>
 
-  <section id="screen-select" class="screen">
-    <h2>Choose a unit</h2>
-    <div class="button-stack">
-      <button class="big-btn" data-unit="unit1">Unit 1</button>
-      <button class="big-btn" data-unit="unit2">Unit 2</button>
-    </div>
-  </section>
+  <label>
+    Section
+    <select id="select-section"></select>
+  </label>
+
+  <label>
+    Order
+    <select id="select-order">
+      <option value="order">Sequential</option>
+      <option value="random">Random</option>
+    </select>
+  </label>
+</div>
+
+<main id="app">
 
   <section id="screen-loading" class="screen">
     <p>Loading flashcards&hellip;</p>
@@ -27,20 +43,10 @@
 
   <section id="screen-error" class="screen">
     <p id="error-message" class="error-text"></p>
-    <button id="btn-error-back" class="link-btn">&larr; Choose a different unit</button>
-  </section>
-
-  <section id="screen-mode" class="screen">
-    <h2 id="mode-title"></h2>
-    <p class="card-count" id="mode-card-count"></p>
-    <div class="button-stack">
-      <button class="big-btn" id="btn-order">View in order</button>
-      <button class="big-btn" id="btn-random">Random order</button>
-    </div>
-    <button id="btn-back-to-units" class="link-btn">&larr; Choose a different unit</button>
   </section>
 
   <section id="screen-card" class="screen">
+    <div class="section-tag" id="section-tag"></div>
     <div class="progress" id="progress"></div>
 
     <div class="card-scene">
@@ -64,8 +70,6 @@
 
     <div class="secondary-controls">
       <button id="btn-restart" class="link-btn">Restart deck</button>
-      <button id="btn-change-mode" class="link-btn">Change mode</button>
-      <button id="btn-change-unit" class="link-btn">Choose a different unit</button>
     </div>
   </section>
 
