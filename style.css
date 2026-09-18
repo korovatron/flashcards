@@ -30,6 +30,8 @@ body {
   min-height: 100dvh;
   display: flex;
   flex-direction: column;
+  /* Stops iOS Safari treating rapid successive taps (eg on nav buttons) as a double-tap-to-zoom gesture. */
+  touch-action: manipulation;
 }
 
 header {
@@ -142,10 +144,13 @@ main#app {
   cursor: pointer;
   font-size: 0.95rem;
   padding: 0.4rem;
+  touch-action: manipulation;
 }
 
-.link-btn:hover {
-  color: var(--colour-accent-dark);
+@media (hover: hover) and (pointer: fine) {
+  .link-btn:hover {
+    color: var(--colour-accent-dark);
+  }
 }
 
 .error-text {
@@ -183,6 +188,7 @@ main#app {
   transform-style: preserve-3d;
   transition: transform 0.5s ease;
   cursor: pointer;
+  touch-action: manipulation;
 }
 
 .card.revealed {
@@ -252,11 +258,14 @@ main#app {
   color: var(--colour-primary);
   box-shadow: 0 0 10px rgba(0, 229, 255, 0.35);
   transition: background 0.15s ease, box-shadow 0.15s ease;
+  touch-action: manipulation;
 }
 
-.controls button:hover {
-  background: rgba(0, 229, 255, 0.15);
-  box-shadow: 0 0 16px rgba(0, 229, 255, 0.6);
+@media (hover: hover) and (pointer: fine) {
+  .controls button:hover {
+    background: rgba(0, 229, 255, 0.15);
+    box-shadow: 0 0 16px rgba(0, 229, 255, 0.6);
+  }
 }
 
 .controls button:disabled {
@@ -272,9 +281,11 @@ main#app {
   box-shadow: 0 0 10px rgba(255, 46, 196, 0.35);
 }
 
-#btn-reveal:hover {
-  background: rgba(255, 46, 196, 0.15);
-  box-shadow: 0 0 16px rgba(255, 46, 196, 0.6);
+@media (hover: hover) and (pointer: fine) {
+  #btn-reveal:hover {
+    background: rgba(255, 46, 196, 0.15);
+    box-shadow: 0 0 16px rgba(255, 46, 196, 0.6);
+  }
 }
 
 .secondary-controls {
