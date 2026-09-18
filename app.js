@@ -300,6 +300,11 @@ function closeAboutModal() {
 
 document.getElementById('btn-about').addEventListener('click', openAboutModal);
 document.getElementById('btn-about-close').addEventListener('click', closeAboutModal);
+document.getElementById('link-download-goodnotes').addEventListener('click', () => {
+  if (window.goatcounter && typeof window.goatcounter.count === 'function') {
+    window.goatcounter.count({ path: "Diya's Flashcards Goodnotes files downloaded", event: true });
+  }
+});
 aboutModalOverlay.addEventListener('click', (e) => {
   if (e.target === aboutModalOverlay) closeAboutModal();
 });
