@@ -221,6 +221,29 @@ main#app {
   flex-direction: column;
   padding: clamp(1.5rem, 3vw, 2.75rem);
   overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--colour-primary) transparent;
+}
+
+.card-face::-webkit-scrollbar {
+  width: 8px;
+}
+
+.card-face::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.card-face::-webkit-scrollbar-thumb {
+  background-color: var(--colour-primary);
+  border-radius: 4px;
+}
+
+.card-back::-webkit-scrollbar-thumb {
+  background-color: var(--colour-accent);
+}
+
+.card-back {
+  scrollbar-color: var(--colour-accent) transparent;
 }
 
 .card-front {
