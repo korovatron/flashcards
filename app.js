@@ -265,6 +265,38 @@ document.getElementById('btn-prev').addEventListener('click', () => goToOffset(-
 
 narrowQuery.addEventListener('change', refreshDropdownLabels);
 
+// About modal
+
+const SHOW_ABOUT_STARTUP_KEY = 'flashcards-show-about-on-startup';
+const aboutModalOverlay = document.getElementById('about-modal-overlay');
+const chkShowAboutStartup = document.getElementById('chk-show-about-startup');
+
+function showAboutOnStartupPreference() {
+  return localStorage.getItem(SHOW_ABOUT_STARTUP_KEY) !== 'false';
+}
+
+function openAboutModal() {
+  chkShowAboutStartup.checked = showAboutOnStartupPreference();
+  aboutModalOverlay.classList.add('active');
+}
+
+function closeAboutModal() {
+  aboutModalOverlay.classList.remove('active');
+}
+
+document.getElementById('btn-about').addEventListener('click', openAboutModal);
+document.getElementById('btn-about-close').addEventListener('click', closeAboutModal);
+aboutModalOverlay.addEventListener('click', (e) => {
+  if (e.target === aboutModalOverlay) closeAboutModal();
+});
+chkShowAboutStartup.addEventListener('change', () => {
+  localStorage.setItem(SHOW_ABOUT_STARTUP_KEY, chkShowAboutStartup.checked ? 'true' : 'false');
+});
+
+if (showAboutOnStartupPreference()) {
+  openAboutModal();
+}
+
 applyCardColour();
 populateSectionOptions(selectUnitEl.value);
 loadUnit(selectUnitEl.value);

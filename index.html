@@ -17,7 +17,10 @@
 <body>
 <header>
   <img src="images/logo.png" alt="Logo" class="logo">
-  <h1>Diya's AQA A Level Computer Science Flashcards</h1>
+  <div class="header-text">
+    <h1>Diya's Flashcards</h1>
+    <p class="header-subtitle">Flashcards for AQA A Level Computer Science</p>
+  </div>
 </header>
 
 <div class="controls-bar">
@@ -79,9 +82,27 @@
     <div class="secondary-controls">
       <button id="btn-restart" class="link-btn">Restart deck</button>
     </div>
+
+    <div class="about-row">
+      <button id="btn-about" class="about-btn">About</button>
+    </div>
   </section>
 
 </main>
+
+<div id="about-modal-overlay" class="modal-overlay">
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="about-modal-heading">
+    <h2 id="about-modal-heading">Diya's Flashcards</h2>
+    <p>Digital flashcards covering the entire AQA A Level Computer Science specification.</p>
+    <p>The content was generously donated by a former student of mine who took the course, giving these cards a genuine student's-eye view of what matters most for revision.</p>
+    <p>Work through topics at your own pace and revisit tricky areas as often as you like, whether you're revising alone or using them alongside classroom teaching.</p>
+    <label class="modal-checkbox-row">
+      <input type="checkbox" id="chk-show-about-startup" checked>
+      Show this at start up
+    </label>
+    <button id="btn-about-close" class="modal-close-btn">Close</button>
+  </div>
+</div>
 
 <footer>
   <a href="https://www.korovatron.co.uk" target="_blank" rel="noopener">More tools @ www.korovatron.co.uk</a>
