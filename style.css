@@ -17,6 +17,15 @@
   box-sizing: border-box;
 }
 
+button, select {
+  /* Prevent text selection/highlighting on controls across desktop and touch devices. */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
 html, body {
   height: 100%;
 }
@@ -202,6 +211,12 @@ main#app {
   transition: transform 0.5s ease, border-color 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   touch-action: manipulation;
+  /* Prevent text selection/highlighting so rapid show/hide taps don't look ugly. */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
 }
 
 .card.revealed {
