@@ -294,3 +294,20 @@ main#app {
   flex-wrap: wrap;
   justify-content: center;
 }
+
+footer {
+  text-align: center;
+  padding: 0.6rem 1rem;
+  font-size: 0.85rem;
+}
+
+footer a {
+  color: var(--colour-text-dim);
+  text-decoration: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  footer a:hover {
+    color: var(--colour-accent);
+  }
+}
