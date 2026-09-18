@@ -1,6 +1,6 @@
 // Service worker for offline use. Bump CACHE_NAME whenever cached files change
 // so old caches are cleared out and users pick up the new version.
-const CACHE_NAME = 'diyas-flashcards-v5';
+const CACHE_NAME = 'diyas-flashcards-v6';
 
 const PRECACHE_ASSETS = [
   './',
