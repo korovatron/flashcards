@@ -386,10 +386,35 @@ main#app {
 }
 
 .modal-checkbox-row input[type="checkbox"] {
-  accent-color: var(--colour-primary);
-  width: 1.1rem;
-  height: 1.1rem;
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+  width: 1.2rem;
+  height: 1.2rem;
+  flex-shrink: 0;
+  border: 2px solid var(--colour-primary);
+  border-radius: 4px;
+  background: transparent;
   cursor: pointer;
+  position: relative;
+}
+
+.modal-checkbox-row input[type="checkbox"]:checked {
+  background: var(--colour-primary);
+}
+
+/* Custom tick drawn with a rotated border, so its colour is consistent across
+   browsers (iOS Safari otherwise renders the native tick white on cyan). */
+.modal-checkbox-row input[type="checkbox"]:checked::after {
+  content: '';
+  position: absolute;
+  left: 0.3rem;
+  top: 0.05rem;
+  width: 0.3rem;
+  height: 0.55rem;
+  border: solid var(--colour-bg);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
 }
 
 .modal-close-btn {
