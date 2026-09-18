@@ -297,6 +297,15 @@ if (showAboutOnStartupPreference()) {
   openAboutModal();
 }
 
+// Register service worker for offline/installable use.
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('sw.js').catch((err) => {
+      console.error('Service worker registration failed:', err);
+    });
+  });
+}
+
 applyCardColour();
 populateSectionOptions(selectUnitEl.value);
 loadUnit(selectUnitEl.value);
