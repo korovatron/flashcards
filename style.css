@@ -138,6 +138,8 @@ main#app {
   padding: 1.5rem 1rem 2rem;
   display: flex;
   flex-direction: column;
+  /* If content still doesn't fit a short viewport, scroll here rather than spilling past the footer. */
+  overflow-y: auto;
 }
 
 .screen {
@@ -497,5 +499,47 @@ footer a {
 @media (hover: hover) and (pointer: fine) {
   footer a:hover {
     color: var(--colour-accent);
+  }
+}
+
+/* Short viewports (eg. 1280x720-ish laptops with browser chrome eating into
+   the height): compact the fixed-size chrome so the card needs less shrinking. */
+@media (max-height: 750px) {
+  .logo {
+    height: 4rem;
+  }
+
+  header {
+    padding: 0.4rem 1.5rem;
+  }
+
+  .controls-bar {
+    padding: 0.4rem 1rem;
+  }
+
+  main#app {
+    padding: 0.75rem 1rem 1rem;
+  }
+
+  .screen {
+    gap: 0.5rem;
+  }
+
+  .card-scene {
+    min-height: 140px;
+  }
+
+  .controls button {
+    padding: 0.4rem clamp(1.1rem, 2vw, 1.6rem);
+  }
+
+  .secondary-controls,
+  .about-row {
+    margin-top: -0.25rem;
+  }
+
+  footer {
+    padding: 0.3rem 1rem;
+    font-size: 0.9rem;
   }
 }
